@@ -66,6 +66,10 @@ Consequently, to install and use the VR-Caps you will need to:
 
 ### 2. Prerequisites
 
+  - Unity 2018.4 or later
+  - Python 3.6.1 or higher
+  - ML-Agents Release 1 or higher
+
 ### 3. Code Base Structure
 
 ## Results
@@ -76,9 +80,6 @@ Summary of all tasks done on this work is as follows: For details, please visit 
 <img src='img/main_figure.png' width=512/> 
 </p>
 
-## Reproducibility
-
-## Acknowledgments
 
 ## Reference
 
