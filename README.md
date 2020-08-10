@@ -32,7 +32,7 @@ In addition, VR-Caps offers numerous advantages over physical testing in the con
 <img src='img/Fig2.1.png' width=512/> 
 </p>
 
-#### Our VR-Caps simulation environment
+#### Our simulation environment: VR-Caps
 
 A physician is performing magnetically actuated active capsule endoscopy on the patient. The Franka Emika 7 DOF robotic arm is placed next to the patient holding a permanent magnet to control capsule endoscope swallowed by the patient. On the right side of the figure, our realistic 3D colon, small intestine and stomach models are shown. Models are generated based on real patient's CT (computer tomography) and texture is given based on real endoscopic images. Frames taken via capsule camera are given in RGB format and estimated depth maps are given correspondingly. In the last two rows, from a patient who has polyps in his colon, the result of segmentation algorithm is shown.
 
