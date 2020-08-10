@@ -75,10 +75,10 @@ The VR-Caps contains several components:
   
 Consequently, to install and use the VR-Caps you will need to:
 
-  - Install Unity (2018.4 or later)
-  - Install Python (3.6.1 or higher)
-  - Install ML-Agents (Release 1 or higher)
-  - Install SofaAPAPI-Unity3D
+  - [Download](https://unity3d.com/get-unity/download) and Install Unity(2018.4 or later)
+  - Install [Python](https://www.python.org/downloads/) (3.6.1 or higher)
+  - Install [ML-Agents](https://github.com/Unity-Technologies/ml-agents) (Release 1 or higher)
+  - Install [SofaAPAPI-Unity3D](http://infinytech3d.com/SofaUnity/sofaUnity.php)
 
 ### 2. Prerequisites
 
