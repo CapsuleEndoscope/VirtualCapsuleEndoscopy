@@ -104,7 +104,7 @@ If you find our work useful in your research please consider citing our paper:
 ```
 @article{...,
     title={VR-Caps: A Virtual Environment for Active Capsule Endoscopy},
-    author={Kagan Incetan and Abdulhamid Obeid and Guliz Irem Gokceler and Yasin Almalioglu and Kutsev Bengisu Ozyoruk and Omer Celik and Helder Araujo and Hunter B. Gilbert and Nicholas J. Durr and Faisal Mahmood and Mehmet Turan},
+    author={Kagan Incetan and Abdulhamid Obeid and Omer Celik and Guliz Irem Gokceler and Yasin Almalioglu  and Hunter B. Gilbert and Nicholas J. Durr and Faisal Mahmood and Kutsev Bengisu Ozyoruk and Mehmet Turan},
     journal={...},
     year={2020}
 }
