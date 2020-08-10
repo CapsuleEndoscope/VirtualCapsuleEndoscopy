@@ -2,7 +2,7 @@
 
 If you use this code, please cite:
 
->    Kagan Incetan,Abdulhamid Obeid, Omer Celik, Kutsev Bengisu Ozyoruk, Helder Araujo, Hunter B. Gilbert, Nicholas J. Durr, Faisal Mahmood, Mehmet Turan. "VR-Caps: A Virtual Environment for Active Capsule Endoscopy.".
+>    Kagan Incetan,Abdulhamid Obeid, Guliz Irem Gokceler, Yasin Almalioglu, Kutsev Bengisu Ozyoruk, Omer Celik, Helder Araujo, Hunter B. Gilbert, Nicholas J. Durr, Faisal Mahmood, Mehmet Turan. "VR-Caps: A Virtual Environment for Active Capsule Endoscopy.".
 
 ## Overview
 
@@ -104,7 +104,7 @@ If you find our work useful in your research please consider citing our paper:
 ```
 @article{...,
     title={VR-Caps: A Virtual Environment for Active Capsule Endoscopy},
-    author={Kagan Incetan and Abdulhamid Obeid and Omer Celik and Kutsev Bengisu Ozyoruk and Helder Araujo and Hunter B. Gilbert and Nicholas J. Durr and Faisal Mahmood and Mehmet Turan},
+    author={Kagan Incetan and Abdulhamid Obeid and Guliz Irem Gokceler and Yasin Almalioglu and Kutsev Bengisu Ozyoruk and Omer Celik and Helder Araujo and Hunter B. Gilbert and Nicholas J. Durr and Faisal Mahmood and Mehmet Turan},
     journal={...},
     year={2020}
 }
