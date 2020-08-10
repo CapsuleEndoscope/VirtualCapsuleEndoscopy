@@ -93,7 +93,7 @@ Consequently, to install and use the VR-Caps you will need to:
 Visual demonstration of all tasks done on this work and their results are as follows: For more details, please visit the article.
 
 <p align="center">
-<img src='img/main_figure.png' width=512/> 
+<img src='img/main_figure.png' width=800/> 
 </p>
 
 
