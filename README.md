@@ -1,12 +1,10 @@
-# Virtual Capsule Endoscopy
+# VR-Caps
+A Virtual Environment for Active Capsule Endoscopy
 
-If you use this code, please cite:
-
->    Kagan Incetan,Abdulhamid Obeid, Omer Celik, Guliz Irem Gokceler, Yasin Almalioglu, Hunter B. Gilbert, Nicholas J. Durr, Faisal Mahmood,Kutsev Bengisu Ozyoruk, Mehmet Turan. "VR-Caps: A Virtual Environment for Active Capsule Endoscopy.".
 
 ## Overview
 
-We introduce a virtual active capsule endoscopy platform developed in Unity that provides a simulation environment to test new devices and algorithms. Also, we propose a sim2real method which makes use of cycle-consistent image domain style transfer and feature domain adaptation techniques to adapt representations at both the pixel-level and feature-level to solve real medical data tasks. Using that pipeline, we perform various evaluations for common robotics and computer vision tasks of active capsule endoscopy such as abnormality detection, classification, depth estimation, SLAM (Simultaneous Localization and Mapping), autonomous navigation, learning control of endoscopic capsule robot with magnetic field inside GI-tract organs, super-resolution, etc. The demonstration of our virtual environment is available on [YouTube](https://www.youtube.com/watch?v=UQ2u3CIUciA).
+We introduce a virtual active capsule endoscopy platform developed in Unity that provides a simulation environment to develop and test algorithms. Also, we propose a sim2real method which makes use of cycle-consistent image domain style transfer and feature domain adaptation techniques to adapt representations at both the pixel-level and feature-level to solve real medical data tasks. Using that pipeline, we perform various evaluations for common robotics and computer vision tasks of active capsule endoscopy such as abnormality detection, classification, depth estimation, SLAM (Simultaneous Localization and Mapping), autonomous navigation, learning control of endoscopic capsule robot with magnetic field inside GI-tract organs, super-resolution, etc. The demonstration of our virtual environment is available on [YouTube](https://www.youtube.com/watch?v=UQ2u3CIUciA).
 
 Our main contributions are as follows:
   - We propose synthetic data generating tool for creating fully labeled data.
