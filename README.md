@@ -52,6 +52,18 @@ We mimic the 3 diseases (i.e., Polyps, Haemorrhage and Ulcerative Collitis) in o
 
 ### 1. Installation
 
+The VR-Caps contains several components:
+  - Unity
+  - MagnetoDynamics
+  - SOFA
+  
+Consequently, to install and use the VR-Caps you will need to:
+
+  - Install Unity (2018.4 or later)
+  - Install Python (3.6.1 or higher)
+  - Install ML-Agents (Release 1 or higher)
+  - Install SofaAPAPI-Unity3D
+
 ### 2. Prerequisites
 
 ### 3. Code Base Structure
