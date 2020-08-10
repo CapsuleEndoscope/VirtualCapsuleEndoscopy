@@ -18,6 +18,8 @@ In addition, VR-Caps offers numerous advantages over physical testing in the con
   - VR-Caps can offer reproducibility, which is valuable in the scientific pursuit of new algorithms
   - The prevalence of rare diseases can be exaggerated in VR-Caps to provide data that may be infeasible or impossible to obtain from human study participants
 
+This site was built using [GitHub Pages](https://pages.github.com/)
+
 ### Summary of Our Work
 
 #### Our simulation environment: VR-Caps
