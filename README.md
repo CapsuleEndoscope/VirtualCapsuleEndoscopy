@@ -2,7 +2,7 @@
 
 If you use this code, please cite:
 
->    Kagan Incetan,Abdulhamid Obeid, Omer Celik, Kutsev Bengisu Ozyoruk, Helder Araujo, Hunter B. Gilbert, Nicholas J. Durr, Faisal Mahmood, Mehmet Turan. "Virtual Active Capsule Endoscopy.".
+>    Kagan Incetan,Abdulhamid Obeid, Omer Celik, Kutsev Bengisu Ozyoruk, Helder Araujo, Hunter B. Gilbert, Nicholas J. Durr, Faisal Mahmood, Mehmet Turan. "VR-Caps: A Virtual Environment for Active Capsule Endoscopy.".
 
 ## Overview
 
@@ -22,16 +22,6 @@ In addition, VR-Caps offers numerous advantages over physical testing in the con
 
 ### Summary of Our Work
 
-#### 3D organ construction and texture assignment process
-
-**a)** We use 3D models reconstructed from real patient CT scans and create textures based on analysis of real endoscopic videos and assign the generated textures to the 3D models by using UV mapping technique.
-**b)** The flow of creating the mucosa textures from real endoscopy images.The flow of creating the mucosa textures from real endoscopy images. We first remove artifacts and reflections on the endoscopy image and then select a uniform region in terms of color and expand it to create the main mucosa texture.
-**c)** The pipeline for adding veins to the mucosa texture. We extract veins from real endoscopy images using MATLAB and assign them on a texture image using a Gaussian distribution that forms relevant vein network.
-
-<p align="center">
-<img src='img/Fig2.1.png' width=512/> 
-</p>
-
 #### Our simulation environment: VR-Caps
 
 A physician is performing magnetically actuated active capsule endoscopy on the patient. The Franka Emika 7 DOF robotic arm is placed next to the patient holding a permanent magnet to control capsule endoscope swallowed by the patient. On the right side of the figure, our realistic 3D colon, small intestine and stomach models are shown. Models are generated based on real patient's CT (computer tomography) and texture is given based on real endoscopic images. Frames taken via capsule camera are given in RGB format and estimated depth maps are given correspondingly. In the last two rows, from a patient who has polyps in his colon, the result of segmentation algorithm is shown.
@@ -40,13 +30,39 @@ A physician is performing magnetically actuated active capsule endoscopy on the 
 <img src='img/Fig1.png' width=512/> 
 </p>
 
-#### Disease Classification
+#### 3D organ construction and texture assignment process
+
+Using an open-source 3D medical image reconstruction software (i.e., InVesalius), 3D organ models were created from CT scans. The reconstructed 3D model was then imported into Blender for further processing. The imported model consists of bones, fat, skin, and other artifacts that are removed so that only the geometries of the colon, small intestines and stomach remain. As a next step, textures are created using the Kvasir dataset. In order to create the main mucosa texture from the Kvasir dataset, various endoscopy images are stitched together and applied on the model inner surface to generate clear, non-blurry and continuous mucosa walls.
+
+<p align="center">
+<img src='img/Fig2.1.png' width=512/> 
+</p>
+
+## Evaluated Tasks 
+
+#### 1. Area Coverage
+
+For that purpose, we propose a Deep Reinforcement Learning (DRL) based active control method that has a goal of learning a maximum coverage policy for human colon monitoring within a minimal operation time.
+
+#### 2. Pose and Depth Estimation
+
+To illustrate the effectiveness of VR-Caps environment in terms of neural network training for pose and depth estimation, we trained a state-of-the-art method, SC-SfMLearner algorithm, using synthetic data with pose and depth ground truths acquired from VR-Caps environment.
+
+#### 3. 3D Reconstruction
+
+In this work, we propose and evaluate a hybrid 3D reconstruction technique including steps Otsu threshold-based reflection detection, OPENCV inpainting-based reflection suppression, feature matching and tracking based image stitching and non-lambertion surface reconstruction. To exemplify the effectiveness of Unity data, we compare the results of reconstructions both on real and synthetic data. 
+
+#### 4. Disease Classification
 
 We mimic the 3 diseases (i.e., Polyps, Haemorrhage and Ulcerative Collitis) in our simulation environment. Hemorrage and Ulcerative Collitis are created based on the real endoscopy images from Kvasir dataset mimicking the abnormal mucosa texture. As polyps are not only distintive in texture but also in topology, we use CT scans from patients who have polyps and use this 3D morphological information to reconstruct 3D organs inside our environment.  instances with different severities ranging from grade 1 to grade 4, three different grades of ulcerative colitis, and different polyps instances with various shapes and sizes.
 
 <p align="center">
 <img src='img/DISEASES.png' width=512/> 
 </p>
+
+#### 5. Super Resolution
+
+We benchmarked the effectivity of the Unity environment using Deep Super-Resolution for Capsule Endoscopy (EndoL2H) network based on the dilemma of high camera resolution coming with increasing the size of the optics and the sensor array.
 
 ## Getting Started
 
@@ -74,7 +90,7 @@ Consequently, to install and use the VR-Caps you will need to:
 
 ## Results
 
-Summary of all tasks done on this work is as follows: For details, please visit the article.
+Visual demonstration of all tasks done on this work and their results are as follows: For more details, please visit the article.
 
 <p align="center">
 <img src='img/main_figure.png' width=512/> 
@@ -87,8 +103,8 @@ If you find our work useful in your research please consider citing our paper:
 
 ```
 @article{...,
-    title={Virtual Active Capsule Endoscopy},
-    author={Kagan Incetan and Abdulhamid Obeid and Omer Celik and Helder Araujo and Hunter B. Gilbert and Nicholas J. Durr and Faisal Mahmood and Mehmet Turan},
+    title={VR-Caps: A Virtual Environment for Active Capsule Endoscopy},
+    author={Kagan Incetan and Abdulhamid Obeid and Omer Celik and Kutsev Bengisu Ozyoruk and Helder Araujo and Hunter B. Gilbert and Nicholas J. Durr and Faisal Mahmood and Mehmet Turan},
     journal={...},
     year={2020}
 }
