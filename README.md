@@ -18,7 +18,6 @@ In addition, VR-Caps offers numerous advantages over physical testing in the con
   - VR-Caps can offer reproducibility, which is valuable in the scientific pursuit of new algorithms
   - The prevalence of rare diseases can be exaggerated in VR-Caps to provide data that may be infeasible or impossible to obtain from human study participants
 
-This site was built using [GitHub Pages](https://pages.github.com/)
 
 ### Summary of Our Work
 
@@ -79,6 +78,14 @@ Consequently, to install and use the VR-Caps you will need to:
   - Install [Python](https://www.python.org/downloads/) (3.6.1 or higher)
   - Install [ML-Agents](https://github.com/Unity-Technologies/ml-agents) (Release 1 or higher)
   - Install [SofaAPAPI-Unity3D](http://infinytech3d.com/SofaUnity/sofaUnity.php)
+
+### Clone the VR-Caps Repository
+
+Now that you have installed Unity and Python, you can now clone this repository
+
+```sh
+git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
+```
 
 ### 2. Prerequisites
 
