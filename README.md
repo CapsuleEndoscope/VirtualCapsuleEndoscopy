@@ -11,23 +11,41 @@ We introduce a virtual active capsule endoscopy platform developed in Unity that
 Our main contributions are as follows:
   - We propose synthetic data generating tool for creating fully labeled data.
   - Using our simulation environment, we provide a platform for testing numerous highly realistic scenarios.
+  
+In addition, VR-Caps offers numerous advantages over physical testing in the context of both the active and passive capsule endoscopy such as:
+  - VR-Caps enables accelerated both jointly and independent design, testing and optimization process for software and hardware components
+  - The marginal cost of synthetic data is low in terms of both time, money, effort and supervision requirements
+  - System properties and parameter values can be easily altered to assess sensitivity and robustness
+  - VR-Caps carries no risks to live animals or humans
+  - VR-Caps can offer reproducibility, which is valuable in the scientific pursuit of new algorithms
+  - The prevalence of rare diseases can be exaggerated in VR-Caps to provide data that may be infeasible or impossible to obtain from human study participants
 
-#### Summary of Our Work
+### Summary of Our Work
 
-**a)** In order to generate a realistic simulation environment, we have used 3D models reconstructed from real patient CT scans. Then, from real endoscopy images, we have created textures and they were applied to the 3D models by using UV mapping method.
-**b)** The flow of creating the mucosa textures from real endoscopy images from the Kvasir dataset. The first step includes the removal of reflections since it  will be an effect introduced in the environment due to light and wet surfaces interaction, and removing any details and features to to make the images appear as flat mucosa images, the next step is to select a region that is neither bright nor dark due to lighting effects and extend that region, then increase the resolution of the image to show the details when the texture is projected on the UV unwrapped mesh of the 3D model.
-**c)** The veins are added to the texture images by extracting them from real endoscopy images using a Matlab script, then they are distributed on a texture image by a script that applies random distribution to form a veins network.
+#### 3D organ construction and texture assignment process
+
+**a)** We use 3D models reconstructed from real patient CT scans and create textures based on analysis of real endoscopic videos and assign the generated textures to the 3D models by using UV mapping technique.
+**b)** The flow of creating the mucosa textures from real endoscopy images.The flow of creating the mucosa textures from real endoscopy images. We first remove artifacts and reflections on the endoscopy image and then select a uniform region in terms of color and expand it to create the main mucosa texture.
+**c)** The pipeline for adding veins to the mucosa texture. We extract veins from real endoscopy images using MATLAB and assign them on a texture image using a Gaussian distribution that forms relevant vein network.
 
 <p align="center">
-<img src='imgs/Trial.png' width=512/> 
+<img src='img/Fig2.1.png' width=512/> 
 </p>
 
-#### Our proposed simulation environment
+#### Our VR-Caps simulation environment
 
 A physician is performing magnetically actuated active capsule endoscopy on the patient. The Franka Emika 7 DOF robotic arm is placed next to the patient holding a permanent magnet to control capsule endoscope swallowed by the patient. On the right side of the figure, our realistic 3D colon, small intestine and stomach models are shown. Models are generated based on real patient's CT (computer tomography) and texture is given based on real endoscopic images. Frames taken via capsule camera are given in RGB format and estimated depth maps are given correspondingly. In the last two rows, from a patient who has polyps in his colon, the result of segmentation algorithm is shown.
 
 <p align="center">
-<img src='imgs/main_figure.png' width=512/> 
+<img src='img/Fig1.png' width=512/> 
+</p>
+
+#### Disease Classification
+
+We mimic the 3 diseases (i.e., Polyps, Haemorrhage and Ulcerative Collitis) in our simulation environment. Hemorrage and Ulcerative Collitis are created based on the real endoscopy images from Kvasir dataset mimicking the abnormal mucosa texture. As polyps are not only distintive in texture but also in topology, we use CT scans from patients who have polyps and use this 3D morphological information to reconstruct 3D organs inside our environment.  instances with different severities ranging from grade 1 to grade 4, three different grades of ulcerative colitis, and different polyps instances with various shapes and sizes.
+
+<p align="center">
+<img src='img/DISEASES.png' width=512/> 
 </p>
 
 ## Getting Started
@@ -39,6 +57,12 @@ A physician is performing magnetically actuated active capsule endoscopy on the 
 ### 3. Code Base Structure
 
 ## Results
+
+Summary of all tasks done on this work is as follows: For details, please visit the article.
+
+<p align="center">
+<img src='img/main_figure.png' width=512/> 
+</p>
 
 ## Reproducibility
 
