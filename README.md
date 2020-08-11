@@ -1,7 +1,7 @@
 # VR-Caps
 A Virtual Environment for Active Capsule Endoscopy
 
-[Installation](##1. Installation)
+[Installation](###1. Installation)
 
 [Summary of our work](Summary.md)
 ## Overview
