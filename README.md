@@ -41,7 +41,14 @@ Now that you have installed Unity and Python, you can now clone this repository
 git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
 ```
 
-### 2. Code Base Structure
+### 2. Creating a New Environment
+
+After installing all dependiences, you will need open Unity and simply create a new Unity project.
+Then, you need to import the following assets into it:
+
+1. GI Organs
+2. Franka Emika Robot Arm
+3. Materials
 
 
 ## Tasks 
