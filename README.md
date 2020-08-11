@@ -48,7 +48,7 @@ The opening scene (Clinic Setup) is our default scene. You can navigate other sc
 
 ### 2. Creating Synthetic Data
 
-For data creation tool, please open [Data Collect]((Assets/Scenes/Data Collect.scene) scene from [Scenes](Assets/Scenes).
+For data creation tool, please open [Data Collect](Assets/Scenes/Data Collect.scene) scene from [Scenes](Assets/Scenes).
 
 
 
