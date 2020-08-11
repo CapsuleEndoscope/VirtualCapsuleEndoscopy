@@ -13,7 +13,7 @@ Our main contributions are as follows:
   - We propose synthetic data generating tool for creating fully labeled data.
   - Using our simulation environment, we provide a platform for testing numerous highly realistic scenarios.
   
-See [Summary of our work](Summary.md) for details.
+See [Summary of our work](Summary.md) for details and our [Paper](..).
 
 
 
@@ -57,8 +57,7 @@ This will open a scene where there is one of our GI system models is already pla
 You can import other models from [GI-Organs](Assets/GI-Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture. 
 
 In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
-
-![Hierarchy window](img/Record_scene.png)
+<img align="right" src="img/Record_scene.png">
 
 <p align="center">
   <img src="img/Record_scene.png"
