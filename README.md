@@ -1,13 +1,6 @@
 # VR-Caps
 A Virtual Environment for Active Capsule Endoscopy
 
-[Overview](#overview)
-
-[Getting Started](#getting-started)
-
-  - [Installation](#1-installation)
-
-
 ## Overview
 
 We introduce a virtual active capsule endoscopy environment developed in Unity that provides a simulation platform to generate synthetic data as well as a test bed to develop and test algorithms. Using that envronment, we perform various evaluations for common robotics and computer vision tasks of active capsule endoscopy such as classification, pose and depth estimation, area coverage, autonomous navigation, learning control of endoscopic capsule robot with magnetic field inside GI-tract organs, super-resolution, etc. The demonstration of our virtual environment is available on [YouTube](https://www.youtube.com/watch?v=UQ2u3CIUciA).
@@ -22,6 +15,34 @@ Our main contributions are as follows:
 </p>
 
 See [Summary of our work](Summary.md) for details.
+
+- [Overview](#overview)
+
+[Getting Started](#getting-started)
+
+
+## Installation & Set-up
+
+- [Installation](#1-installation)
+
+## Getting Started
+
+- [Getting Started Guide](#getting-started)
+- [ML-Agents Toolkit Overview](ML-Agents-Overview.md)
+  - [Background: Unity](Background-Unity.md)
+
+
+## Getting Started
+
+- [Creating An Environment](Creating-An-Environment.md)
+
+
+## Help
+
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Limitations](#limitations)
+
+
 
 ## Getting Started
 
@@ -56,11 +77,14 @@ git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
 ### 3. Code Base Structure
 
 
-## Evaluated Tasks 
+## Tasks 
 
 #### 1. Area Coverage
 
-For that purpose, we propose a Deep Reinforcement Learning (DRL) based active control method that has a goal of learning a maximum coverage policy for human colon monitoring within a minimal operation time.
+We use Unity's ML-Agents Toolkit for a Deep Reinforcement Learning (DRL) based active control method that has a goal of learning a maximum coverage policy for human colon monitoring within a minimal operation time.
+
+- [Designing a Learning Environment](Learning-Environment-Design.md)
+- [Training ML-Agents](Training-ML-Agents.md)
 
 #### 2. Pose and Depth Estimation
 
@@ -91,6 +115,9 @@ Visual demonstration of all tasks done on this work and their results are as fol
 <img src='img/main_figure.png' width=800/> 
 </p>
 
+## Frequently Asked Questions
+
+## Limitations
 
 ## Reference
 
