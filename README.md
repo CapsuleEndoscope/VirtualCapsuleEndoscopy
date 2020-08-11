@@ -69,18 +69,17 @@ In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Impo
 One can also generate 3D organs using the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/). Please select a CT data in the DICOM format among the dataset for colon or stomach (see below image). Please note that you can also find  have different models of the organs with and without the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence.
 
 <p align="center">
-<img src='img/OrganDataset.png' width=512/> 
+<img src='img/OrganDataset.png' width=800/> 
 </p>
 
 #### Generating Disease Classes
-In the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/), you can also find  have different models of the organs with the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence. Please navigate to relavant class and download the corresponding DICOM format. Then, by following the same steps explained [above](#generating-3D-organs-from-scratch), you can create 3D organ with polyps. In order to attain the texture particularly generated for polyps, you should use Blender or a similar software to manually depart meshes for the regions of polyp occurences and save them as different models.(see below image) 
+In the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/), you can also find  have different models of the organs with the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence (see [image](img/PolypData.pn)). Please navigate to relavant class and download the corresponding DICOM format. Then, by following the same steps explained [above](#generating-3D-organs-from-scratch), you can create 3D organ with polyps. In order to attain the texture particularly generated for polyps, you should use Blender or a similar software to manually depart meshes for the regions of polyp occurences and save them as different models.(see below [image](img/polypinblender.png)) 
 
-
-<p align="left">
-<img src='img/PolypData.png' width=512/> 
+<p align="center">
+<img src='img/PolypData.png' width=400/> 
 </p>
-<p align="right">
-<img src='img/polypinblender.png' width=512/> 
+<p align="center">
+<img src='img/polypinblender.png' width=400/> 
 </p>
 
 
