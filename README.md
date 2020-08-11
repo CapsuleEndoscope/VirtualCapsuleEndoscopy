@@ -66,7 +66,7 @@ In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Impo
 
 #### Generating 3D organs from scratch
 
-One can also generate 3D organs using the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/). Please select a CT data in the DICOM format among the dataset for colon or stomach (see below image). Please note that you can also find  have different models of the organs with and without the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence.
+One can also generate 3D organs using the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/). Please select a CT data in the DICOM format among the dataset for colon or stomach (see below [image](img/OrganDataset.png)). Please note that you can also find  have different models of the organs with and without the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence.
 
 <p align="center">
 <img src='img/OrganDataset.png' width=800/> 
