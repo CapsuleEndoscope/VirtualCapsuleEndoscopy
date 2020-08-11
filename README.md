@@ -51,15 +51,15 @@ The opening scene Clinic Setup is our default scene. You can navigate other scen
 For data creation tool, please open Record Collect scene from [Scenes](VR-Caps-Unity/Assets/Scenes).
 
 This will open a scene where there is one of our GI system models is already placed and a capsule with a camera and a light source is attached on it.
-<p align="left">
+<p align="center">
   <img src="img/Record-scene.png"
-       width="1000" border="10" />
+       width="1000" />
 </p>
 
 You will need **Unity Recorder** which can be installed using **Unity Package Manager** (see [image](img/Unity-Recorder.png)
-<p align="left">
+<p align="center">
   <img src="img/Unity-Recorder.png"
-       width="600" border="10" />
+       width="600" />
 </p>
 
 
