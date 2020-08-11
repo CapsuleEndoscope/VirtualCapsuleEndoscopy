@@ -44,7 +44,7 @@ git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
 ```
 Now, you will need open Unity Hub and simply create a new Unity project by adding VR-Caps-Unity. Then, simply open the Unity by clicking on the project you just added.
 
-The opening scene Clinic Setupis our default scene. You can navigate other scenes by [Scenes](VR-Caps-Unity/Assets/Scenes).
+The opening scene Clinic Setup is our default scene. You can navigate other scenes by [Scenes](VR-Caps-Unity/Assets/Scenes).
 
 ### 2. Creating Synthetic Data
 
@@ -54,13 +54,16 @@ This will open a scene where there is one of our GI system models is already pla
 
 #### Importing new models to the scene
 
-You can import other models from [GI-Organs](Assets/GI Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture. 
+You can import other models from [GI-Organs](Assets/GI-Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture. 
 
 In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
 
-<p align="left">
+<p align="center">
   <img src="img/Record_scene.png"
        alt="Hierarchy window"
+       .caption[
+**Fig. 1:** Image caption
+]
        width="200" border="10" />
 </p>
 
