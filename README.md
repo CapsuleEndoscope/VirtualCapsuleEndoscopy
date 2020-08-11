@@ -46,18 +46,10 @@ Now, you will need open Unity Hub and simply create a new Unity project by addin
 
 The opening scene (Clinic Setup) is our default scene. You can navigate other scenes by [Scenes](Assets/Scenes).
 
-#### Creating Synthetic Data
+### 2. Creating Synthetic Data
 
-For data creation tool, please open Data Collect scene from [Scenes](Assets/Scenes).
+For data creation tool, please open [Data Collect]((Assets/Scenes/Data Collect.scene) scene from [Scenes](Assets/Scenes).
 
-### 2. Creating a New Environment
-
-After installing all dependiences, 
-Then, you need to import the following assets into it:
-
-1. GI Organs
-2. Franka Emika Robot Arm
-3. Materials
 
 
 ## Tasks 
