@@ -52,8 +52,7 @@ For data creation tool, please open Record Collect scene from [Scenes](VR-Caps-U
 
 This will open a scene where there is one of our GI system models is already placed and a capsule with a camera and a light source is attached on it.
 <p align="center">
-  <img src="img/Record-scene.png"
-       width="1000" />
+  <img src="img/Record-scene.png">
 </p>
 
 You will need **Unity Recorder** which can be installed using **Unity Package Manager** (see [image](img/Unity-Recorder.png)
