@@ -44,14 +44,23 @@ git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
 ```
 Now, you will need open Unity Hub and simply create a new Unity project by adding VR-Caps-Unity. Then, simply open the Unity by clicking on the project you just added.
 
-The opening scene [Clinic Setup](Assets/Scenes/Clinic_Setup.scene) is our default scene. You can navigate other scenes by [Scenes](Assets/Scenes).
+The opening scene Clinic Setupis our default scene. You can navigate other scenes by [Scenes](VR-Caps-Unity/Assets/Scenes).
 
 ### 2. Creating Synthetic Data
 
-For data creation tool, please open [Data Collect](Assets/Scenes/Data_Collect.scene) scene from [Scenes](Assets/Scenes).
+For data creation tool, please open Record Collect scene from [Scenes](VR-Caps-Unity/Assets/Scenes).
 
+This will open a scene where there is one of our GI system models is already placed in. 
 
+#### Importing new models to the scene
 
+You can import other models from [GI Organs](Assets/GI Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture. In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
+
+<p align="left">
+  <img src="img/Record_scene.png"
+       alt="Hierarchy window"
+       width="400" border="10" />
+</p>
 ## Tasks 
 
 #### 1. Area Coverage
@@ -63,7 +72,8 @@ We use Unity's ML-Agents Toolkit for a Deep Reinforcement Learning (DRL) based a
 
 #### 2. Pose and Depth Estimation
 
-To illustrate the effectiveness of VR-Caps environment in terms of neural network training for pose and depth estimation, we trained a state-of-the-art method, SC-SfMLearner algorithm, using synthetic data with pose and depth ground truths acquired from VR-Caps environment.
+To illustrate the effectiveness of VR-Caps environment in terms of neural network training for pose and depth estimation, we trained a state-of-the-art method, SC-SfMLearner algorithm, using synthetic 
+with pose and depth ground truths acquired from VR-Caps environment.
 
 #### 3. 3D Reconstruction
 
