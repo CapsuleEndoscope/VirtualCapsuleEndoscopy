@@ -50,17 +50,48 @@ The opening scene Clinic Setupis our default scene. You can navigate other scene
 
 For data creation tool, please open Record Collect scene from [Scenes](VR-Caps-Unity/Assets/Scenes).
 
-This will open a scene where there is one of our GI system models is already placed in. 
+This will open a scene where there is one of our GI system models is already placed in.
 
 #### Importing new models to the scene
 
-You can import other models from [GI Organs](Assets/GI Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture. In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
+You can import other models from [GI Organs](Assets/GI Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture. 
+
+In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
 
 <p align="left">
   <img src="img/Record_scene.png"
        alt="Hierarchy window"
-       width="400" border="10" />
+       width="200" border="10" />
 </p>
+
+#### Generating 3D organs from scratch
+
+One can also generate 3D organs using the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/). Please select a CT data in the DICOM format among the dataset for colon or stomach (see below image). Please note that you can also find  have different models of the organs with and without the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence.
+
+<p align="center">
+<img src='img/OrganDataset.png' width=512/> 
+</p>
+
+#### Generating Disease Classes
+In the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/), you can also find  have different models of the organs with the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence. Please navigate to relavant class and download the corresponding DICOM format. Then, by following the same steps explained [above](#generating-3D-organs-from-scratch), you can create 3D organ with polyps. In order to attain the texture particularly generated for polyps, you should use Blender or a similar software to manually depart meshes for the regions of polyp occurences and save them as different models.(see below image) 
+
+
+<p align="left">
+<img src='img/PolypData.png' width=512/> 
+</p>
+<p align="right">
+<img src='img/polypinblender.png' width=512/> 
+</p>
+
+
+
+3D models are taken into Unity environment simulating organs of the body. First, the CT DICOM images were taken from the Cancer Imaging Archive website \cite{CIA}. The CT Colonography dataset consists of 825 subjects only 347 of them were differentiated into three classes: 243 patients with no polyps, 69 patients with 6 to 9 mm sized polyps, and 35 patients with polyps larger than 10 mm, and the stomach CT dataset consists of 46 subjects. These datasets were used to generate the 3D models to have different models of the organs with and without the cancerous lumps to have realistic shaped polyps with realistic locations of occurrence. The other diseases; ulcer and hemorrhages are applied to the 3D models as textures which will be extracted from the Kvasir dataset since they are features that cannot be detected or obtained from CT scans like polyps.
+%Stomach and Colonogrophy CT DICOM images from the three classes were downloaded by using the NBIA Data Retriever \cite{NBIA}. To convert these DICOM images to 3D objects InVesalius 3 was used \cite{invesalius}. The DICOM images consist of two sets, one taken in the supine position and the other in the prone position. The supine position DICOM images were used since that is the patient’s position during the capsule endoscopy session. %The software provides an automatic selection of the regions desired to be converted, which in our case is the Soft Tissue. Then a surface will be created on the selected regions constructing the corresponding 3D model, which is exported as a Wavefront (.obj) file.
+%The 3D model is then imported into Blender for further processing. As shown in figure 2a, the imported model consists of bones, fat, skin, and other artifacts that are removed so that only the geometries of the colon, small intestines and stomach remain. %Not all converted 3D models includes the whole colon and intestines, these models were discarded. The processed models contains the full colon and small intestines. The figure shows the imported model before and after the removal of the unwanted parts.
+%These models consist of a large number of mesh which makes it hard to process, so the number of mesh is reduced by using another software called MeshLab, using an algorithm called Quadric Edge Collapse Decimation for mesh simplification. It reduces the face number of a mesh while preserving its boundaries and normals.
+%After reducing the mesh size, the model is imported to blender to fill the gaps and fix the topology of the organs. The organs are not connected together due to some loss of details that occur during the CT scanning session, so after filling the gaps and making sure that there is no missing parts, the connections and the openings between the stomach and small intestines, and the small intestines and colon are made.
+
+
 ## Tasks 
 
 #### 1. Area Coverage
