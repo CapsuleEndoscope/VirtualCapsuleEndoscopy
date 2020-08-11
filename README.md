@@ -57,9 +57,7 @@ This will open a scene where there is one of our GI system models is already pla
 You can import other models from [GI-Organs](Assets/GI-Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture. 
 
 In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
-<img align="right" src="img/Record_scene.png">
-
-<p align="center">
+<p align="left">
   <img src="img/Record_scene.png"
        width="200" border="10" />
 </p>
