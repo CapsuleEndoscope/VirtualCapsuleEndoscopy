@@ -58,12 +58,10 @@ You can import other models from [GI-Organs](Assets/GI-Organs) folder by simply 
 
 In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
 
+![Hierarchy window](img/Record_scene.png)
+
 <p align="center">
   <img src="img/Record_scene.png"
-       alt="Hierarchy window"
-       .caption[
-**Fig. 1:** Image caption
-]
        width="200" border="10" />
 </p>
 
