@@ -2,6 +2,7 @@
 A Virtual Environment for Active Capsule Endoscopy
 
 [Overview](#overview)
+
 [Installation](#1-installation)
 
 
@@ -91,12 +92,12 @@ Visual demonstration of all tasks done on this work and their results are as fol
 
 ## Reference
 
-If you find our work useful in your research please consider citing our paper:
+If you find our work useful in your research or if you use parts of this code please consider citing our paper:
 
 ```
 @article{...,
     title={VR-Caps: A Virtual Environment for Active Capsule Endoscopy},
-    author={Kagan Incetan and Abdulhamid Obeid and Omer Celik and Guliz Irem Gokceler and Yasin Almalioglu  and Hunter B. Gilbert and Nicholas J. Durr and Faisal Mahmood and Kutsev Bengisu Ozyoruk and Mehmet Turan},
+    author={Kagan Incetan and Abdulhamid Obeid and Omer Celik and Guliz Irem Gokceler and Yasin Almalioglu and Hunter B. Gilbert and Nicholas J. Durr and Faisal Mahmood and Kutsev Bengisu Ozyoruk and Mehmet Turan},
     journal={...},
     year={2020}
 }
