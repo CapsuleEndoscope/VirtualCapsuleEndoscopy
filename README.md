@@ -1,7 +1,7 @@
 # VR-Caps
 A Virtual Environment for Active Capsule Endoscopy
 
-[Custom foo description](## Overview)
+[Custom foo description](#Overview)
 ## Overview
 
 We introduce a virtual active capsule endoscopy platform developed in Unity that provides a simulation environment to develop and test algorithms. Also, we propose a sim2real method which makes use of cycle-consistent image domain style transfer and feature domain adaptation techniques to adapt representations at both the pixel-level and feature-level to solve real medical data tasks. Using that pipeline, we perform various evaluations for common robotics and computer vision tasks of active capsule endoscopy such as abnormality detection, classification, depth estimation, SLAM (Simultaneous Localization and Mapping), autonomous navigation, learning control of endoscopic capsule robot with magnetic field inside GI-tract organs, super-resolution, etc. The demonstration of our virtual environment is available on [YouTube](https://www.youtube.com/watch?v=UQ2u3CIUciA).
