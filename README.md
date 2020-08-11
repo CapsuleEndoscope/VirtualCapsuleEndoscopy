@@ -23,8 +23,10 @@ See [Summary of our work](Summary.md) for details.
 
 The VR-Caps contains several components:
   - Unity
-  - MagnetoDynamics
+  - ML-Agents
   - SOFA
+  - MagnetoDynamics
+  - SC-SfMLearner
   
 Consequently, to install and use the VR-Caps you will need to:
 
@@ -40,10 +42,17 @@ Now that you have installed Unity and Python, you can now clone this repository
 ```sh
 git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
 ```
+Now, you will need open Unity Hub and simply create a new Unity project by adding VR-Caps-Unity. Then, simply open the Unity by clicking on the project you just added.
+
+The opening scene (Clinic Setup) is our default scene. You can navigate other scenes by [Scenes](Assets/Scenes).
+
+#### Creating Synthetic Data
+
+For data creation tool, please open Data Collect scene from [Scenes](Assets/Scenes).
 
 ### 2. Creating a New Environment
 
-After installing all dependiences, you will need open Unity and simply create a new Unity project.
+After installing all dependiences, 
 Then, you need to import the following assets into it:
 
 1. GI Organs
