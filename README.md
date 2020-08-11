@@ -3,7 +3,9 @@ A Virtual Environment for Active Capsule Endoscopy
 
 [Overview](#overview)
 
-[Installation](#1-installation)
+[Getting Started](#getting-started)
+
+  - [Installation](#1-installation)
 
 
 ## Overview
@@ -33,7 +35,7 @@ The VR-Caps contains several components:
 Consequently, to install and use the VR-Caps you will need to:
 
   - [Download](https://unity3d.com/get-unity/download) and Install Unity(2018.4 or later)
-  - [Install]](https://www.python.org/downloads/) Python(3.6.1 or higher)
+  - [Install](https://www.python.org/downloads/) Python(3.6.1 or higher)
   - [Install](https://github.com/Unity-Technologies/ml-agents) ML-Agents(Release 1 or higher)
   - [Install](http://infinytech3d.com/SofaUnity/sofaUnity.php) SofaAPAPI-Unity3D
 
