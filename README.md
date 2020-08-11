@@ -50,7 +50,20 @@ The opening scene Clinic Setup is our default scene. You can navigate other scen
 
 For data creation tool, please open Record Collect scene from [Scenes](VR-Caps-Unity/Assets/Scenes).
 
-This will open a scene where there is one of our GI system models is already placed in.
+This will open a scene where there is one of our GI system models is already placed and a capsule with a camera and a light source is attached on it.
+<p align="left">
+  <img src="img/Record-scene.png"
+       width="1000" border="10" />
+</p>
+
+You will need **Unity Recorder** which can be installed using **Unity Package Manager** (see [image](img/Unity-Recorder.png)
+<p align="left">
+  <img src="img/Unity-Recorder.png"
+       width="600" border="10" />
+</p>
+
+
+
 
 #### Importing new models to the scene
 
@@ -58,7 +71,7 @@ You can import other models from [GI-Organs](Assets/GI-Organs) folder by simply 
 
 In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
 <p align="left">
-  <img src="img/Record_scene.png"
+  <img src="img/Hierarchy.png"
        width="200" border="10" />
 </p>
 
