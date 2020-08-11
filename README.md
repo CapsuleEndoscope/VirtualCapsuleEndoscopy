@@ -1,6 +1,10 @@
 # VR-Caps
 A Virtual Environment for Active Capsule Endoscopy
 
+<p align="center">
+<img src='img/Fig1.png' width=512/> 
+</p>
+
 ## Overview
 
 We introduce a virtual active capsule endoscopy environment developed in Unity that provides a simulation platform to generate synthetic data as well as a test bed to develop and test algorithms. Using that envronment, we perform various evaluations for common robotics and computer vision tasks of active capsule endoscopy such as classification, pose and depth estimation, area coverage, autonomous navigation, learning control of endoscopic capsule robot with magnetic field inside GI-tract organs, super-resolution, etc. The demonstration of our virtual environment is available on [YouTube](https://www.youtube.com/watch?v=UQ2u3CIUciA).
@@ -9,38 +13,7 @@ Our main contributions are as follows:
   - We propose synthetic data generating tool for creating fully labeled data.
   - Using our simulation environment, we provide a platform for testing numerous highly realistic scenarios.
   
-
-<p align="center">
-<img src='img/Fig1.png' width=512/> 
-</p>
-
 See [Summary of our work](Summary.md) for details.
-
-- [Overview](#overview)
-
-[Getting Started](#getting-started)
-
-
-## Installation & Set-up
-
-- [Installation](#1-installation)
-
-## Getting Started
-
-- [Getting Started Guide](#getting-started)
-- [ML-Agents Toolkit Overview](ML-Agents-Overview.md)
-  - [Background: Unity](Background-Unity.md)
-
-
-## Getting Started
-
-- [Creating An Environment](Creating-An-Environment.md)
-
-
-## Help
-
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Limitations](#limitations)
 
 
 
@@ -60,7 +33,7 @@ Consequently, to install and use the VR-Caps you will need to:
   - [Install](https://github.com/Unity-Technologies/ml-agents) ML-Agents(Release 1 or higher)
   - [Install](http://infinytech3d.com/SofaUnity/sofaUnity.php) SofaAPAPI-Unity3D
 
-### Clone the VR-Caps Repository
+#### Clone the VR-Caps Repository
 
 Now that you have installed Unity and Python, you can now clone this repository
 
@@ -68,13 +41,7 @@ Now that you have installed Unity and Python, you can now clone this repository
 git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
 ```
 
-### 2. Prerequisites
-
-  - Unity 2018.4 or later
-  - Python 3.6.1 or higher
-  - ML-Agents Release 1 or higher
-
-### 3. Code Base Structure
+### 2. Code Base Structure
 
 
 ## Tasks 
@@ -131,3 +98,24 @@ If you find our work useful in your research or if you use parts of this code pl
     year={2020}
 }
 ```
+
+
+
+<!-- 
+
+## Installation & Set-up
+
+- [Installation](#1-installation)
+
+
+## Getting Started
+
+- [Creating An Environment](Creating-An-Environment.md)
+
+
+## Help
+
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Limitations](#limitations)
+
+-->
