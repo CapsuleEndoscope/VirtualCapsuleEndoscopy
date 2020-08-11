@@ -1,43 +1,57 @@
 # VR-Caps
 A Virtual Environment for Active Capsule Endoscopy
 
+[Overview](#overview)
 [Installation](#1-installation)
 
-[Summary of our work](Summary.md)
+
 ## Overview
 
-We introduce a virtual active capsule endoscopy platform developed in Unity that provides a simulation environment to develop and test algorithms. Also, we propose a sim2real method which makes use of cycle-consistent image domain style transfer and feature domain adaptation techniques to adapt representations at both the pixel-level and feature-level to solve real medical data tasks. Using that pipeline, we perform various evaluations for common robotics and computer vision tasks of active capsule endoscopy such as abnormality detection, classification, depth estimation, SLAM (Simultaneous Localization and Mapping), autonomous navigation, learning control of endoscopic capsule robot with magnetic field inside GI-tract organs, super-resolution, etc. The demonstration of our virtual environment is available on [YouTube](https://www.youtube.com/watch?v=UQ2u3CIUciA).
+We introduce a virtual active capsule endoscopy environment developed in Unity that provides a simulation platform to generate synthetic data as well as a test bed to develop and test algorithms. Using that envronment, we perform various evaluations for common robotics and computer vision tasks of active capsule endoscopy such as classification, pose and depth estimation, area coverage, autonomous navigation, learning control of endoscopic capsule robot with magnetic field inside GI-tract organs, super-resolution, etc. The demonstration of our virtual environment is available on [YouTube](https://www.youtube.com/watch?v=UQ2u3CIUciA).
 
 Our main contributions are as follows:
   - We propose synthetic data generating tool for creating fully labeled data.
   - Using our simulation environment, we provide a platform for testing numerous highly realistic scenarios.
   
-In addition, VR-Caps offers numerous advantages over physical testing in the context of both the active and passive capsule endoscopy such as:
-  - VR-Caps enables accelerated both jointly and independent design, testing and optimization process for software and hardware components
-  - The marginal cost of synthetic data is low in terms of both time, money, effort and supervision requirements
-  - System properties and parameter values can be easily altered to assess sensitivity and robustness
-  - VR-Caps carries no risks to live animals or humans
-  - VR-Caps can offer reproducibility, which is valuable in the scientific pursuit of new algorithms
-  - The prevalence of rare diseases can be exaggerated in VR-Caps to provide data that may be infeasible or impossible to obtain from human study participants
-
-
-### Summary of Our Work
-
-#### Our simulation environment: VR-Caps
-
-A physician is performing magnetically actuated active capsule endoscopy on the patient. The Franka Emika 7 DOF robotic arm is placed next to the patient holding a permanent magnet to control capsule endoscope swallowed by the patient. On the right side of the figure, our realistic 3D colon, small intestine and stomach models are shown. Models are generated based on real patient's CT (computer tomography) and texture is given based on real endoscopic images. Frames taken via capsule camera are given in RGB format and estimated depth maps are given correspondingly. In the last two rows, from a patient who has polyps in his colon, the result of segmentation algorithm is shown.
 
 <p align="center">
 <img src='img/Fig1.png' width=512/> 
 </p>
 
-#### 3D organ construction and texture assignment process
+See [Summary of our work](Summary.md) for details.
 
-Using an open-source 3D medical image reconstruction software (i.e., InVesalius), 3D organ models were created from CT scans. The reconstructed 3D model was then imported into Blender for further processing. The imported model consists of bones, fat, skin, and other artifacts that are removed so that only the geometries of the colon, small intestines and stomach remain. As a next step, textures are created using the Kvasir dataset. In order to create the main mucosa texture from the Kvasir dataset, various endoscopy images are stitched together and applied on the model inner surface to generate clear, non-blurry and continuous mucosa walls.
+## Getting Started
 
-<p align="center">
-<img src='img/Fig2.1.png' width=512/> 
-</p>
+### 1. Installation
+
+The VR-Caps contains several components:
+  - Unity
+  - MagnetoDynamics
+  - SOFA
+  
+Consequently, to install and use the VR-Caps you will need to:
+
+  - [Download](https://unity3d.com/get-unity/download) and Install Unity(2018.4 or later)
+  - [Install]](https://www.python.org/downloads/) Python(3.6.1 or higher)
+  - [Install](https://github.com/Unity-Technologies/ml-agents) ML-Agents(Release 1 or higher)
+  - [Install](http://infinytech3d.com/SofaUnity/sofaUnity.php) SofaAPAPI-Unity3D
+
+### Clone the VR-Caps Repository
+
+Now that you have installed Unity and Python, you can now clone this repository
+
+```sh
+git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
+```
+
+### 2. Prerequisites
+
+  - Unity 2018.4 or later
+  - Python 3.6.1 or higher
+  - ML-Agents Release 1 or higher
+
+### 3. Code Base Structure
+
 
 ## Evaluated Tasks 
 
@@ -65,37 +79,6 @@ We mimic the 3 diseases (i.e., Polyps, Haemorrhage and Ulcerative Collitis) in o
 
 We benchmarked the effectivity of the Unity environment using Deep Super-Resolution for Capsule Endoscopy (EndoL2H) network based on the dilemma of high camera resolution coming with increasing the size of the optics and the sensor array.
 
-## Getting Started
-
-### 1. Installation
-
-The VR-Caps contains several components:
-  - Unity
-  - MagnetoDynamics
-  - SOFA
-  
-Consequently, to install and use the VR-Caps you will need to:
-
-  - [Download](https://unity3d.com/get-unity/download) and Install Unity(2018.4 or later)
-  - Install [Python](https://www.python.org/downloads/) (3.6.1 or higher)
-  - Install [ML-Agents](https://github.com/Unity-Technologies/ml-agents) (Release 1 or higher)
-  - Install [SofaAPAPI-Unity3D](http://infinytech3d.com/SofaUnity/sofaUnity.php)
-
-### Clone the VR-Caps Repository
-
-Now that you have installed Unity and Python, you can now clone this repository
-
-```sh
-git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
-```
-
-### 2. Prerequisites
-
-  - Unity 2018.4 or later
-  - Python 3.6.1 or higher
-  - ML-Agents Release 1 or higher
-
-### 3. Code Base Structure
 
 ## Results
 
