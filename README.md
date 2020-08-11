@@ -44,11 +44,11 @@ git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
 ```
 Now, you will need open Unity Hub and simply create a new Unity project by adding VR-Caps-Unity. Then, simply open the Unity by clicking on the project you just added.
 
-The opening scene (Clinic Setup) is our default scene. You can navigate other scenes by [Scenes](Assets/Scenes).
+The opening scene [Clinic Setup](Assets/Scenes/Clinic_Setup.scene) is our default scene. You can navigate other scenes by [Scenes](Assets/Scenes).
 
 ### 2. Creating Synthetic Data
 
-For data creation tool, please open [Data Collect](Assets/Scenes/Data Collect.scene) scene from [Scenes](Assets/Scenes).
+For data creation tool, please open [Data Collect](Assets/Scenes/Data_Collect.scene) scene from [Scenes](Assets/Scenes).
 
 
 
