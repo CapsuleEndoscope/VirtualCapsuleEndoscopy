@@ -127,11 +127,11 @@ Specular reflection which occurs on the surface of organs due to interaction of 
 Post-processing effects that HDRP (High Definition Rendering Pipeline) provides (specular reflection, vignette, lens distortion, chromatic aberration and depth of field) can also be adjusted with relevant parameters.
 
 <p align="center">
-<img src='img/params.png' width=512/> 
+<img src='img/params.png' width=800/> 
 </p>
 
 #### Movement of the capsule
-For the actuation of the capsule, we have placed a cylinder magnet inside the capsule and a ball magnet attached to the robot arm. Simulation of the magnetic field is modeled as dipole-dipole interactions by using (**MagnetoDynamics**).<img align="right" src="img/ElectroMagneticFieldController.png" width="200">
+For the actuation of the capsule, we have placed a cylinder magnet inside the capsule and a ball magnet attached to the robot arm. Simulation of the magnetic field is modeled as dipole-dipole interactions by using (**MagnetoDynamics**).<img align="right" src="img/ElectroMagneticFieldController.png" width="300">
 
 To activate m
 
