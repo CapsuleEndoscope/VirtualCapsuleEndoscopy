@@ -122,13 +122,17 @@ You can use the camera intrinsic parameters that we get by calibrating MiroCam a
 </p>
 
 To adjust Unity Camera, use parameters on Inspector window (e.g,, Field of View, Sensor Size, Focal Length etc.)
-Set the average of <img src="https://render.githubusercontent.com/render/math?math=f_{x}"> and <img src="https://render.githubusercontent.com/render/math?math=f_{y}"> <img align="right" src="img/Unity_Cam_Params2.png" width = 200> for the focal length, 2x optical center (<img src="https://render.githubusercontent.com/render/math?math=2c_{x}"> and <img src="https://render.githubusercontent.com/render/math?math=2c_{y}">) for sensor size X and Y.
+Set the average of <img src="https://render.githubusercontent.com/render/math?math=f_{x}"> and <img src="https://render.githubusercontent.com/render/math?math=f_{y}"> for the focal length, 2x optical center (<img src="https://render.githubusercontent.com/render/math?math=2c_{x}"> and <img src="https://render.githubusercontent.com/render/math?math=2c_{y}">) for sensor size X and Y.
 
 Please note that image resolution is adjusted on **Recorder**.
 
-Specular reflection which occurs on the surface of organs due to interaction of light source can also be adjusted by the **Coat Mask** <img align="right" src="img/reflection2.png" width = 200> parameter on Unity's Inspector window. 
+Specular reflection which occurs on the surface of organs due to interaction of light source can also be adjusted by the **Coat Mask** parameter on Unity's Inspector window. 
 
-Post-processing effects that HDRP (High Definition Rendering Pipeline) provides (specular reflection, vignette, lens distortion, chromatic aberration and depth of field) can also be adjusted with relevant parameters. <img align="left" src="img/post-processing.png" width = 200>
+Post-processing effects that HDRP (High Definition Rendering Pipeline) provides (specular reflection, vignette, lens distortion, chromatic aberration and depth of field) can also be adjusted with relevant parameters.
+
+<p align="center">
+<img src='img/params.png' width=512/> 
+</p>
 
 #### Movement of the capsule
 as
