@@ -92,16 +92,18 @@ Please note that, due to some imperfections on the CT data, you may need to fill
 
 
 #### Generating Disease Classes
+We create pipeline to mimic 3 classes of diseases in our environment (Polpys with various shapes and sizes, Ulcerative Collitis and Hemorrage for 3 and 4 different amount and severity levels respectively) that can be used to train/test disease classification algorithms.
 
 ##### Polyps
-In the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/), you can also find  have different models of the organs with the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence. Please navigate to relavant class and download the corresponding DICOM format. Then, by following the same steps explained [above](#generating-3D-organs-from-scratch), you can create 3D organ with polyps. In order to attain the texture particularly generated for polyps, you should use Blender or a similar software to manually depart meshes for the regions of polyp occurences and save them as different models.
-
+In the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/), you can also find different models of the organs with the cancerous lumps that can be used to mimic real shaped polyps with realistic locations of occurence. Firts, navigate to relavant class in the archive and download the corresponding DICOM format. Then, by following the same steps explained [above](#generating-3D-organs-from-scratch), you can create 3D organ with polyps. In order to attain the texture particularly generated for polyps, you should use Blender or a similar software to manually depart meshes for the regions of polyp occurences and save them as different models. Then in Unity you can attain polyps texture Polyps.mat in the where other organ textures are located.
 <p align="center">
 <img src='img/CancerImaging_Blender.png'> 
 </p>
 CancerImaging_Blender
 
-##### Ulcer and Hemorrage
+##### Ulcertive Collitis and Hemorrage
+Unlike Polyps, Ulcer and Hemorrage do not have differ in the topology of 3D organs but in texture. Therefore, we generate specific textures for these classes. In order to create organs with these diseases, please select and attain a texture from the textures folder where other .mat files exist. 
+
 
 
 
