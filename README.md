@@ -133,10 +133,14 @@ Post-processing effects that HDRP (High Definition Rendering Pipeline) provides 
 #### Movement of the capsule<img align="right" src="img/ElectroMagneticFieldController.png" width="300">
 For the actuation of the capsule, we have placed a cylinder magnet inside the capsule and a ball magnet attached to the robot arm. Simulation of the magnetic field is modeled as dipole-dipole interactions by using (**MagnetoDynamics**).
 
-To activate m
-
 The default Scene has two infinitesimal dipoles (**MagneticDipole** prefabs) embedded in Rigidbodies of the  **DiscMagnet**(child object of **Capsule**) and  **BallMagnet** objects. In Unity’s Scene and Hierarchy views, you can see that **MagneticDipoles** are attached to the them.
 Please note that every Scene that uses **Magnetodynamics** must contain an **ElectromagneticFieldController** that can be found inside the Magnetodynamics [folder](VR-Caps/Unity/Assets/Magnetodynamics). Just drag it to anywhere in the scene to activate magnetic field.
+
+If the **InverseKinematic.cs** [script](Unity-VR-Caps/Assets/Scripts/InverseKinematic.cs) is activated, the robotic arm will also be moving as you move the ball magnet (either by a script or manually). 
+
+It is also possible to move the capsule directly without any electro magnetic force on it. To do that, add the **CapsuleMovement.cs** [script](Unity-VR-Caps/Assets/Scripts/CapsuleMovement.cs) to the capsule and control it by keyboard arrows.
+
+The capsule camera can also be controlled if you add **MouseCameraController.cs** [script](Unity-VR-Caps/Assets/Scripts/MouseCameraController.cs) to the camera. In that way, the capsule camera will look to the direction pointed by the mouse.
 
 ### 3. Tasks 
 
