@@ -103,7 +103,9 @@ CancerImaging_Blender
 
 ##### Ulcertive Collitis and Hemorrage
 Unlike Polyps, Ulcer and Hemorrage do not have differ in the topology of 3D organs but in texture. Therefore, we generate specific textures for these classes. In order to create organs with these diseases, please select and attain a texture from the textures folder where other .mat files exist. 
-
+<p align="center">
+<img src='img/DISEASES.png' width=512/> 
+</p>
 
 
 
