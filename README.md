@@ -71,7 +71,7 @@ On the panel, click **Add New Recorders** and then select **Image Sequence** and
 
 <p align="center">
   <img src="img/Recorder_comb.png"
-       width="600" />
+       width="800" />
 </p>
 
 Adjust image resolutions from **Capture Output Resolution** and FPS(Frame per second) from **Target Value**.
