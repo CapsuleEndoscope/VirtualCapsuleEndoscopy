@@ -131,11 +131,11 @@ Post-processing effects that HDRP (High Definition Rendering Pipeline) provides 
 </p>
 
 #### Movement of the capsule
-For the actuation of the capsule, we have placed a cylinder magnet inside the capsule and a ball magnet attached to the robot arm. Simulation of the magnetic field is modeled as dipole-dipole interactions by using (**MagnetoDynamics**). 
+For the actuation of the capsule, we have placed a cylinder magnet inside the capsule and a ball magnet attached to the robot arm. Simulation of the magnetic field is modeled as dipole-dipole interactions by using (**MagnetoDynamics**).<img align="right" src="img/ElectroMagneticFieldController.png" width="200">
+
 To activate m
 
-The default Scene has two infinitesimal dipoles (**MagneticDipole** prefabs) embedded in Rigidbodies of the  **DiscMagnet**(child object of **Capsule**) and  **BallMagnet** objects. In Unity’s Scene and Hierarchy views, you can see that **MagneticDipoles** are attached to the them.<img align="right" src="img/ElectromagneticFieldController.png" width="200">
-
+The default Scene has two infinitesimal dipoles (**MagneticDipole** prefabs) embedded in Rigidbodies of the  **DiscMagnet**(child object of **Capsule**) and  **BallMagnet** objects. In Unity’s Scene and Hierarchy views, you can see that **MagneticDipoles** are attached to the them.
 Please note that every Scene that uses **Magnetodynamics** must contain an **ElectromagneticFieldController** that can be found inside the Magnetodynamics [folder](VR-Caps/Unity/Assets/Magnetodynamics). Just drag it to anywhere in the scene to activate magnetic field.
 
 ### 3. Tasks 
