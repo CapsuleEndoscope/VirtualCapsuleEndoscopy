@@ -105,7 +105,7 @@ Unlike Polyps, Ulcer and Hemorrage do not have differ in the topology of 3D orga
 </p>
 
 #### Various camera designs
-As there are commercially available options in capsule camera designs in the wireless capsule endoscopy, in our environment, we extend the standard mono camera capsule to different designs such as stereo, dual and 360&deg camera). You can select these options from the **Capsules** folder under this [folder](VR-Caps-Unity/Assets/Imported/)
+As there are commercially available options in capsule camera designs in the wireless capsule endoscopy, in our environment, we extend the standard mono camera capsule to different designs such as stereo, dual and 360° camera). You can select these options from the **Capsules** folder under this [folder](VR-Caps-Unity/Assets/Imported/)
 <p align="center">
 <img src='img/CAPSULESLL.png' width=512/> 
 </p>
