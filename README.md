@@ -1,5 +1,8 @@
-# VR-Caps
+# VR-Caps<p align="left">
+<img src='img/logo.png' width=200/> 
+</p>
 A Virtual Environment for Active Capsule Endoscopy
+
 
 <p align="center">
 <img src='img/Fig1.png' width=512/> 
@@ -37,7 +40,7 @@ Consequently, to install and use the VR-Caps you will need to:
 
 #### Clone the VR-Caps Repository
 
-Now that you have installed Unity and Python, you can now clone this repository
+Now that you have installed Unity and Python, you can now clone this repository.
 
 ```sh
 git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
@@ -52,13 +55,13 @@ For data creation tool, please open Record Collect scene from [Scenes](VR-Caps-U
 
 This will open a scene where there is one of our GI system models is already placed and a capsule with a mono camera and a light source is attached on it.
 <p align="center">
-  <img src="img/Record-Scene.png" width = 400>
+  <img src="img/Record-Scene.png" width = 600>
 </p>
 
-You will need **Unity Recorder** which can be installed using **Unity Package Manager** (see [image](img/Unity-Recorder.png)
+You will need **Unity Recorder** which can be installed using **Unity Package Manager** (see [image](img/Unity-Recorder.png))
 <p align="center">
   <img src="img/Unity-Recorder.png"
-       width="300" />
+       width="500" />
 </p>
 
 
@@ -118,7 +121,9 @@ Image resolution is adjusted on **Recorder**. Set the average of <img src="https
 <p align="left">
 <img src='img/Unity_Cam_Params.png' width=200/> 
 </p>
-#### Moving the capsule
+#### Movement of the capsule
+
+
 ## Tasks 
 
 #### 1. Area Coverage
@@ -141,9 +146,6 @@ In this work, we propose and evaluate a hybrid 3D reconstruction technique inclu
 
 We mimic the 3 diseases (i.e., Polyps, Haemorrhage and Ulcerative Collitis) in our simulation environment. Hemorrage and Ulcerative Collitis are created based on the real endoscopy images from Kvasir dataset mimicking the abnormal mucosa texture. As polyps are not only distintive in texture but also in topology, we use CT scans from patients who have polyps and use this 3D morphological information to reconstruct 3D organs inside our environment.  instances with different severities ranging from grade 1 to grade 4, three different grades of ulcerative colitis, and different polyps instances with various shapes and sizes.
 
-<p align="center">
-<img src='img/DISEASES.png' width=512/> 
-</p>
 
 #### 5. Super Resolution
 
