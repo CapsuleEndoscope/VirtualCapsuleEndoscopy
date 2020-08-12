@@ -52,13 +52,13 @@ For data creation tool, please open Record Collect scene from [Scenes](VR-Caps-U
 
 This will open a scene where there is one of our GI system models is already placed and a capsule with a mono camera and a light source is attached on it.
 <p align="center">
-  <img src="img/Record-Scene.png">
+  <img src="img/Record-Scene.png" width = 400>
 </p>
 
 You will need **Unity Recorder** which can be installed using **Unity Package Manager** (see [image](img/Unity-Recorder.png)
 <p align="center">
   <img src="img/Unity-Recorder.png"
-       width="600" />
+       width="300" />
 </p>
 
 
@@ -95,7 +95,7 @@ We create pipeline to mimic 3 classes of diseases in our environment (Polpys wit
 ##### Polyps
 In the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/), you can also find different models of the organs with the cancerous lumps that can be used to mimic real shaped polyps with realistic locations of occurence. Firts, navigate to relavant class in the archive and download the corresponding DICOM format. Then, by following the same steps explained [above](#generating-3D-organs-from-scratch), you can create 3D organ with polyps. In order to attain the texture particularly generated for polyps, you should use Blender or a similar software to manually depart meshes for the regions of polyp occurences and save them as different models. Then in Unity you can attain polyps texture Polyps.mat in the where other organ textures are located.
 <p align="center">
-<img src='img/CancerImaging_Blender.png'> 
+<img src='img/CancerImaging_Blender.png' width= 400 > 
 </p>
 
 ##### Ulcertive Collitis and Hemorrage
