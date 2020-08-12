@@ -1,4 +1,6 @@
-VR-Caps <img src="img/logo-low.jpg" align="middle" width="200"/>
+<p align="center">
+<img src='img/logo-turan.png'> 
+</p>
 ===========
 
 A Virtual Environment for Active Capsule Endoscopy
