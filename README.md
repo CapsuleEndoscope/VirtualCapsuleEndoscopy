@@ -1,6 +1,5 @@
-# VR-Caps<p align="left">
-<img src='img/logo.jpg' width=200/> 
-</p>
+VR-Caps <img src="logo.jpg" width="280px" align="right" />
+===========
 A Virtual Environment for Active Capsule Endoscopy
 
 
