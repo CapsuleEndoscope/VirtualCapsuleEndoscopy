@@ -68,11 +68,7 @@ You will need **Unity Recorder** which can be installed using **Unity Package Ma
 
 You can import other models from [GI-Organs](Assets/GI-Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture. 
 
-In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
-<p align="left">
-  <img src="img/Hierarchy.png"
-       width="200" border="10" />
-</p>
+In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)<img align="right" src="Hierarchy.png" width="200">
 
 #### Generating 3D organs from scratch
 
