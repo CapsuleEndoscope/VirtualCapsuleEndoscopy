@@ -130,8 +130,8 @@ Post-processing effects that HDRP (High Definition Rendering Pipeline) provides 
 <img src='img/params.png' width=800/> 
 </p>
 
-#### Movement of the capsule
-For the actuation of the capsule, we have placed a cylinder magnet inside the capsule and a ball magnet attached to the robot arm. Simulation of the magnetic field is modeled as dipole-dipole interactions by using (**MagnetoDynamics**).<img align="right" src="img/ElectroMagneticFieldController.png" width="300">
+#### Movement of the capsule<img align="right" src="img/ElectroMagneticFieldController.png" width="300">
+For the actuation of the capsule, we have placed a cylinder magnet inside the capsule and a ball magnet attached to the robot arm. Simulation of the magnetic field is modeled as dipole-dipole interactions by using (**MagnetoDynamics**).
 
 To activate m
 
