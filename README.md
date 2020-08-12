@@ -63,6 +63,16 @@ You will need **Unity Recorder** which can be installed using **Unity Package Ma
        width="500" />
 </p>
 
+After installing Unity Recorder, navigate to Recorder Window and open the Recorder panel. 
+
+On the panel, click **Add New Recorders** and then select **Image Sequence** and **AOV Image Sequence** for RGB image recording and depth recording respctively. 
+
+<p align="center">
+  <img src="img/Recorder_comb.png"
+       width="600" />
+</p>
+
+Adjust image resolutions from **Capture Output Resolution** and FPS(Frame per second) from **Target Value**.
 
 #### Importing new models to the scene<img align="right" src="img/Hierarchy.png" width="200">
 
