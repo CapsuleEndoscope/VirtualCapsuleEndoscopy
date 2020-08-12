@@ -116,9 +116,13 @@ As there are commercially available options in capsule camera designs in the wir
 Unity's camera options (i.e., Field of View, Sensor Size, Focal Length etc.) and post-processing effects that HDRP (High Definition Rendering Pipeline) provides (specular reflection, vignette, lens distortion, chromatic aberration and depth of field) that can be adjusted with relevant parameters. These are used for both mimicing real endoscopy cameras and augmenting the data that will be generated.
 
 You can use the parameters that we get by calibrating MiroCam and PillCam capsule endoscope cameras or play with them to generate 
-Image resolution is adjusted on **Recorder**. Set the average of <img src="https://render.githubusercontent.com/render/math?math=f_{x}"> and <img src="https://render.githubusercontent.com/render/math?math=f_{y}"> for the focal length, optical center (<img src="https://render.githubusercontent.com/render/math?math=2\timesc_{x}"> and <img src="https://render.githubusercontent.com/render/math?math=2\timesc_{y}">) for sensor size X and Y.
+Image resolution is adjusted on **Recorder**. Set the average of <img src="https://render.githubusercontent.com/render/math?math=f_{x}"> and <img src="https://render.githubusercontent.com/render/math?math=f_{y}"> for the focal length, optical center (<img src="https://render.githubusercontent.com/render/math?math=2c_{x}"> and <img src="https://render.githubusercontent.com/render/math?math=2c_{y}">) for sensor size X and Y.
 <p align="left">
 <img src='img/Unity_Cam_Params.png' width=200/> 
+</p>
+
+<p align="center">
+<img src='img/Miro_pill_params.png' width=400/> 
 </p>
 #### Movement of the capsule
 
