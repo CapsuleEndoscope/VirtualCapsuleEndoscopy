@@ -50,7 +50,7 @@ The opening scene Clinic Setup is our default scene. You can navigate other scen
 
 For data creation tool, please open Record Collect scene from [Scenes](VR-Caps-Unity/Assets/Scenes).
 
-This will open a scene where there is one of our GI system models is already placed and a capsule with a camera and a light source is attached on it.
+This will open a scene where there is one of our GI system models is already placed and a capsule with a mono camera and a light source is attached on it.
 <p align="center">
   <img src="img/Record-Scene.png">
 </p>
@@ -60,8 +60,6 @@ You will need **Unity Recorder** which can be installed using **Unity Package Ma
   <img src="img/Unity-Recorder.png"
        width="600" />
 </p>
-
-
 
 
 #### Importing new models to the scene
@@ -99,7 +97,6 @@ In the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections
 <p align="center">
 <img src='img/CancerImaging_Blender.png'> 
 </p>
-CancerImaging_Blender
 
 ##### Ulcertive Collitis and Hemorrage
 Unlike Polyps, Ulcer and Hemorrage do not have differ in the topology of 3D organs but in texture. Therefore, we generate specific textures for these classes. In order to create organs with these diseases, please select and attain a texture from the textures folder where other .mat files exist. 
@@ -107,8 +104,11 @@ Unlike Polyps, Ulcer and Hemorrage do not have differ in the topology of 3D orga
 <img src='img/DISEASES.png' width=512/> 
 </p>
 
-
-
+#### Various camera designs
+As there are commercially available options in capsule camera designs in the wireless capsule endoscopy, in our environment, we extend the standard mono camera capsule to different designs such as stereo, dual and 360a^{\circ} camera). You can select these options from the **Capsules** folder under this [folder](VR-Caps-Unity/Assets/Imported/)
+<p align="center">
+<img src='img/CAPSULESLL.png' width=512/> 
+</p>
 
 ## Tasks 
 
