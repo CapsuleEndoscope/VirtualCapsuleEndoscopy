@@ -1,7 +1,6 @@
 <p align="center">
-<img src='img/logo-turan.png'> 
+<img src='img/logo_turan.png'> 
 </p>
-===========
 
 A Virtual Environment for Active Capsule Endoscopy
 
