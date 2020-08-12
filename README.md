@@ -1,10 +1,9 @@
-VR-Caps
+VR-Caps:A Virtual Environment for Active Capsule Endoscopy
 =====
 <p align="center">
 <img src='img/logo_turan.png'> 
 </p>
 
-A Virtual Environment for Active Capsule Endoscopy
 
 <p align="center">
 <img src='img/Fig1.png' width=512/> 
