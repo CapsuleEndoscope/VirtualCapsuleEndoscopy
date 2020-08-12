@@ -110,6 +110,15 @@ As there are commercially available options in capsule camera designs in the wir
 <img src='img/CAPSULESLL.png' width=512/> 
 </p>
 
+#### Adjusting camera parameters and post processing effects
+Unity's camera options (i.e., Field of View, Sensor Size, Focal Length etc.) and post-processing effects that HDRP (High Definition Rendering Pipeline) provides (specular reflection, vignette, lens distortion, chromatic aberration and depth of field) that can be adjusted with relevant parameters. These are used for both mimicing real endoscopy cameras and augmenting the data that will be generated.
+
+You can use the parameters that we get by calibrating MiroCam and PillCam capsule endoscope cameras or play with them to generate 
+Image resolution is adjusted on **Recorder**. Set the average of $f_{x}$ and $f_{y}$ for the focal length, 2\times optical center ($c_x$ and $c_{y}$) for sensor size X and Y.
+<p align="center">
+<img src='img/Unity_Cam_Params.png' width=512/> 
+</p>
+#### Moving the capsule
 ## Tasks 
 
 #### 1. Area Coverage
