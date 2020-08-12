@@ -127,7 +127,7 @@ Specular reflection which occurs on the surface of organs due to interaction of 
 Post-processing effects that HDRP (High Definition Rendering Pipeline) provides (specular reflection, vignette, lens distortion, chromatic aberration and depth of field) can also be adjusted with relevant parameters.
 
 <p align="center">
-<img src='img/params.png' width=800/> 
+<img src='img/params.png' width=650/> 
 </p>
 
 #### Movement of the capsule<img align="right" src="img/ElectroMagneticFieldController.png" width="300">
