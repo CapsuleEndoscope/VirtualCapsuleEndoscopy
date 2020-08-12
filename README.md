@@ -131,12 +131,16 @@ Post-processing effects that HDRP (High Definition Rendering Pipeline) provides 
 </p>
 
 #### Movement of the capsule
-as
+For the actuation of the capsule, we have placed a cylinder magnet inside the capsule and a ball magnet attached to the robot arm. Simulation of the magnetic field is modeled as dipole-dipole interactions by using (**MagnetoDynamics**). 
+To activate m
 
+The default Scene has two infinitesimal dipoles (**MagneticDipole** prefabs) embedded in Rigidbodies of the  **DiscMagnet**(child object of **Capsule**) and  **BallMagnet** objects. In Unity’s Scene and Hierarchy views, you can see that **MagneticDipoles** are attached to the them.<img align="right" src="img/ElectromagneticFieldController.png" width="200">
 
-## Tasks 
+Please note that every Scene that uses **Magnetodynamics** must contain an **ElectromagneticFieldController** that can be found inside the Magnetodynamics [folder](VR-Caps/Unity/Assets/Magnetodynamics). Just drag it to anywhere in the scene to activate magnetic field.
 
-#### 1. Area Coverage
+### 3. Tasks 
+
+#### 3.1. Area Coverage
 
 We use Unity's ML-Agents Toolkit for a Deep Reinforcement Learning (DRL) based active control method that has a goal of learning a maximum coverage policy for human colon monitoring within a minimal operation time.
 
