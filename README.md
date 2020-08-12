@@ -94,14 +94,12 @@ Please note that, due to some imperfections on the CT data, you may need to fill
 #### Generating Disease Classes
 
 ##### Polyps
-In the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/), you can also find  have different models of the organs with the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence (see [image](img/PolypData.pn)). Please navigate to relavant class and download the corresponding DICOM format. Then, by following the same steps explained [above](#generating-3D-organs-from-scratch), you can create 3D organ with polyps. In order to attain the texture particularly generated for polyps, you should use Blender or a similar software to manually depart meshes for the regions of polyp occurences and save them as different models.(see below [image](img/polypinblender.png)) 
+In the [Cancer Imaging Archive](https://www.cancerimagingarchive.net/collections/), you can also find  have different models of the organs with the cancerous lumps that can be used to real shaped polyps with realistic locations of occurence. Please navigate to relavant class and download the corresponding DICOM format. Then, by following the same steps explained [above](#generating-3D-organs-from-scratch), you can create 3D organ with polyps. In order to attain the texture particularly generated for polyps, you should use Blender or a similar software to manually depart meshes for the regions of polyp occurences and save them as different models.
 
 <p align="center">
-<img src='img/PolypData.png' width=400/> 
+<img src='img/CancerImaging_Blender.png'> 
 </p>
-<p align="center">
-<img src='img/polypinblender.png' width=400/> 
-</p>
+CancerImaging_Blender
 
 ##### Ulcer and Hemorrage
 
