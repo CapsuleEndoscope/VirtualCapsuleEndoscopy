@@ -170,7 +170,7 @@ with pose and depth ground truths acquired from VR-Caps environment.
 
 #### 3. 3D Reconstruction
 
-In this work, we propose and evaluate a hybrid 3D reconstruction technique including steps Otsu threshold-based reflection detection, OPENCV inpainting-based reflection suppression, feature matching and tracking based image stitching and non-lambertion surface reconstruction. To exemplify the effectiveness of Unity data, we compare the results of reconstructions both on real and synthetic data. 
+In this work, we propose and evaluate a hybrid 3D reconstruction technique. To exemplify the effectiveness of Unity data, we compare the results of reconstructions both on real and synthetic data. 
 
 #### 4. Disease Classification
 
