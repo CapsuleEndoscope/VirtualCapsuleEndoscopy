@@ -187,7 +187,7 @@ We benchmarked the effectivity of the Unity environment using Deep Super-Resolut
 Visual demonstration of all tasks done on this work and their results are as follows: For more details, please visit the article.
 
 <p align="center">
-<img src='img/main_figure.png' width=800/> 
+<img src='img/summary.png' width=800/> 
 </p>
 
 ## Frequently Asked Questions
