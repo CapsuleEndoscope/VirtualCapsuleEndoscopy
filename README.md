@@ -17,7 +17,7 @@ Our main contributions are as follows:
   - We propose synthetic data generating tool for creating fully labeled data.
   - Using our simulation environment, we provide a platform for testing numerous highly realistic scenarios.
   
-See [Summary of our work](Summary.md) for details and our [Paper](..).
+See [Summary of our work](Summary.md) for details and our [Paper](https://arxiv.org/abs/2008.12949).
 
 
 
