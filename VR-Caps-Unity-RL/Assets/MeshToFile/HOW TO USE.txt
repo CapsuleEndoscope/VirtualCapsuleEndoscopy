@@ -1,0 +1,8 @@
+This tool is mean to save procedural mesh (actually any mesh) into 3D files, currently support for OBJ and FBX ASCII files.
+To open the tool, click on the Window > Mesh To File menu:
+- Assign a mesh filter.
+- Assign a mesh name.
+- Select file extension.
+- Select file path.
+- Click Save.
+Done!

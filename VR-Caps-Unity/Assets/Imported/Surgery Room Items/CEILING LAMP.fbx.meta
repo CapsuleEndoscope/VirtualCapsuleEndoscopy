@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: 48d1b14d7e6f2c34ba8cb461259c9533
+timeCreated: 1496695665
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: operating_lamp_1
+    100004: operating_lamp_10
+    100006: operating_lamp_11
+    100008: operating_lamp_12
+    100010: operating_lamp_13
+    100012: operating_lamp_14
+    100014: operating_lamp_15
+    100016: operating_lamp_16
+    100018: operating_lamp_2
+    100020: operating_lamp_3
+    100022: operating_lamp_4
+    100024: operating_lamp_5
+    100026: operating_lamp_6
+    100028: operating_lamp_7
+    100030: operating_lamp_8
+    100032: operating_lamp_9
+    400000: //RootNode
+    400002: operating_lamp_1
+    400004: operating_lamp_10
+    400006: operating_lamp_11
+    400008: operating_lamp_12
+    400010: operating_lamp_13
+    400012: operating_lamp_14
+    400014: operating_lamp_15
+    400016: operating_lamp_16
+    400018: operating_lamp_2
+    400020: operating_lamp_3
+    400022: operating_lamp_4
+    400024: operating_lamp_5
+    400026: operating_lamp_6
+    400028: operating_lamp_7
+    400030: operating_lamp_8
+    400032: operating_lamp_9
+    2300000: //RootNode
+    2300002: operating_lamp_1
+    2300004: operating_lamp_10
+    2300006: operating_lamp_11
+    2300008: operating_lamp_12
+    2300010: operating_lamp_13
+    2300012: operating_lamp_14
+    2300014: operating_lamp_15
+    2300016: operating_lamp_16
+    2300018: operating_lamp_2
+    2300020: operating_lamp_3
+    2300022: operating_lamp_4
+    2300024: operating_lamp_5
+    2300026: operating_lamp_6
+    2300028: operating_lamp_7
+    2300030: operating_lamp_8
+    2300032: operating_lamp_9
+    3300000: //RootNode
+    3300002: operating_lamp_1
+    3300004: operating_lamp_10
+    3300006: operating_lamp_11
+    3300008: operating_lamp_12
+    3300010: operating_lamp_13
+    3300012: operating_lamp_14
+    3300014: operating_lamp_15
+    3300016: operating_lamp_16
+    3300018: operating_lamp_2
+    3300020: operating_lamp_3
+    3300022: operating_lamp_4
+    3300024: operating_lamp_5
+    3300026: operating_lamp_6
+    3300028: operating_lamp_7
+    3300030: operating_lamp_8
+    3300032: operating_lamp_9
+    4300000: operating_lamp_1
+    4300002: operating_lamp_16
+    4300004: operating_lamp_14
+    4300006: operating_lamp_13
+    4300008: operating_lamp_12
+    4300010: operating_lamp_10
+    4300012: operating_lamp_9
+    4300014: operating_lamp_8
+    4300016: operating_lamp_15
+    4300018: operating_lamp_7
+    4300020: operating_lamp_6
+    4300022: operating_lamp_4
+    4300024: operating_lamp_5
+    4300026: operating_lamp_3
+    4300028: operating_lamp_2
+    4300030: operating_lamp_11
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
