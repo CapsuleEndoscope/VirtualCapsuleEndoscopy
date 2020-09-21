@@ -165,7 +165,7 @@ We use Unity's ML-Agents Toolkit for a Deep Reinforcement Learning (DRL) based a
 </p>
 
 <p align="right">
-  <img src="imgs/capsulecoverage.gif"/>
+  <img src="img/capsulecoverage.gif"/>
 </p>
 
 #### 2. Pose and Depth Estimation
