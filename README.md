@@ -161,16 +161,18 @@ The capsule camera can also be controlled if you add **MouseCameraController.cs*
 We use Unity's ML-Agents Toolkit for a Deep Reinforcement Learning (DRL) based active control method that has a goal of learning a maximum coverage policy for human colon monitoring within a minimal operation time. We create a different project particular for this task: [Unity-VR-Caps-RL](Unity-VR-Caps-RL). To reproduce results, first, install ML-Agents from the [website](https://github.com/Unity-Technologies/ml-agents). (We highly encourage to check basic tutorials to get started with the ML-Agents). Then, download the project folder and open it on Unity Hub. The scene with a capsule agent, a stomach 3D model and the script(CoverageAgent.cs) will be opened. You can see that the trained model (CoverageBrain.nn) is already attached as a component to the capsule. So, you can just run the play mode for the coverage task. In order to train a new model, please follow the steps explained in the ML-Agents' tutorial.
 
 <p align="center">
-<img src='img/capsuleagent.png' width=300/> 
+<img src='img/capsuleagent.png' width=100/> 
 </p>
 
-- [Designing a Learning Environment](Learning-Environment-Design.md)
-- [Training ML-Agents](Training-ML-Agents.md)
 
 #### 2. Pose and Depth Estimation
 
-To illustrate the effectiveness of VR-Caps environment in terms of neural network training for pose and depth estimation, we trained a state-of-the-art method, SC-SfMLearner algorithm, using synthetic 
-with pose and depth ground truths acquired from VR-Caps environment.
+To illustrate the effectiveness of VR-Caps environment in terms of neural network training for pose and depth estimation, we trained a state-of-the-art method, SC-SfMLearner algorithm, using synthetic data created on VR-Caps. The results showed on the paper can be reproduced by using the models given in the [folder](Tasks/PoseAndDepth/models). Model 1 corresponds to the case when there is only real data is used (without virtual pretraining) and Model 2 is the case where we use synthetic data for pre-training and then fine-tune with the real data from [EndoSLAM dataset](https://github.com/CapsuleEndoscope/EndoSLAM). For the pretraining, we used the data on [drive](https://drive.google.com/drive/folders/1PJvGr9i3G5oe1t_Qw6mwq2YX3QPmk5-T?usp=sharing). The set used for training with the real data training ... and ... are used for Model 1 and 2, respectively. The test sets for colon are Colon_Traj5_HighCam and Colon_Traj5_LowCam and for small instesine SmallInstesine_Traj1_HighCam and SmallInstesine_Traj4_HighCam.
+
+For pose estimation, ATE and RPE calculations can be done by using [poseError.py](Tasks/PoseAndDepth/scripts/poseError.py)
+To extend the test cases, you can generate new data as explained above and train new SC-SfM networks and test on both real or synthetic data.
+
+For depth estimation, we test on both virtual and real endoscopy data ([Kvasir](https://datasets.simula.no/kvasir/) and [Redlesion](https://rdm.inesctec.pt/dataset/nis-2018-003) datasets).
 
 #### 3. 3D Reconstruction
 
