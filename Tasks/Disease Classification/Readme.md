@@ -28,4 +28,3 @@ Please input the path of the relevant model for testing.
 ```sh
 python classification_pytorch.py --data_root kvasir-ours --out_dir test --tensorboard_dir tensorboard --all_folds training --val_fold validation --action test
 ```
-```
