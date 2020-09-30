@@ -11,20 +11,20 @@ To reproduce our results presented in the paper, we provide the used datasets on
 ### Without Pre-Training
 
 ```sh
-python classification_pytorch.py --data_root kvasir-ours --out_dir nofinetune --tensorboard_dir tensorboard --all_folds training --val_fold validation --action train --num_epochs 10
+python classification_pytorch.py --data_root kvasir_dadta --out_dir nofinetune --tensorboard_dir tensorboard --all_folds training --val_fold validation --action train --num_epochs 10
 ```
 ### With Pre-Training
  - Pre-training with the synthetic data:
 ```sh
-python classification_pytorch.py --data_root unity-ours --out_dir unity-pretrain --tensorboard_dir tensorboard --all_folds training --val_fold validation --action train --num_epochs 10
+python classification_pytorch.py --data_root unity_data --out_dir unity-pretrain --tensorboard_dir tensorboard --all_folds training --val_fold validation --action train --num_epochs 10
 ```
  - Fine-tuning with the real data:
 ```sh
-python classification_pytorch.py --data_root kvasir-ours --out_dir results/unity-pretrain-kvasir-finetune --tensorboard_dir tensorboard --all_folds training --val_fold validation --action retrain --num_epochs 10
+python classification_pytorch.py --data_root kvasir_data --out_dir results/unity-pretrain-kvasir-finetune --tensorboard_dir tensorboard --all_folds training --val_fold validation --action retrain --num_epochs 10
 ```
 ## Testing
 Please input the path of the relevant model for testing.
 
 ```sh
-python classification_pytorch.py --data_root kvasir-ours --out_dir test --tensorboard_dir tensorboard --all_folds training --val_fold validation --action test
+python classification_pytorch.py --data_root kvasir_data --out_dir test --tensorboard_dir tensorboard --all_folds training --val_fold validation --action test
 ```
