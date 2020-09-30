@@ -11,7 +11,7 @@ To reproduce our results presented in the paper, we provide the used datasets on
 ### Without Pre-Training
 
 ```sh
-python classification_pytorch.py --data_root kvasir_dadta --out_dir nofinetune --tensorboard_dir tensorboard --all_folds training --val_fold validation --action train --num_epochs 10
+python classification_pytorch.py --data_root kvasir_data --out_dir nofinetune --tensorboard_dir tensorboard --all_folds training --val_fold validation --action train --num_epochs 10
 ```
 ### With Pre-Training
  - Pre-training with the synthetic data:
