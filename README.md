@@ -158,7 +158,7 @@ The capsule camera can also be controlled if you add **MouseCameraController.cs*
 
 #### 3.1. Area Coverage
 <img align="right" src="img/capsuleagent.png" width="200">
-We use Unity's ML-Agents Toolkit to train a Deep Reinforcement Learning (DRL) based active control method that has a goal of learning a maximum coverage policy for human organ monitoring within a minimal operation time. We create a different project for the area coverage task (VR-Caps-Unity-RL) . To reproduce results or train you own control policy please follow the instructions provided [I'm an inline-style link](https://www.google.com)
+We use Unity's ML-Agents Toolkit to train a Deep Reinforcement Learning (DRL) based active control method that has a goal of learning a maximum coverage policy for human organ monitoring within a minimal operation time. We create a different project for the area coverage task (VR-Caps-Unity-RL) . To reproduce results or train you own control policy please follow the instructions provided: https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy/tree/master/VR-Caps-Unity-RL
 <p align="center">
   <img src="img/capsulecoverage.gif" width=500//>
 </p>
