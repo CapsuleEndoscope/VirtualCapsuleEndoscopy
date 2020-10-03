@@ -158,12 +158,12 @@ The capsule camera can also be controlled if you add **MouseCameraController.cs*
 
 #### 3.1. Area Coverage
 <img align="right" src="img/capsuleagent.png" width="200">
-We use Unity's ML-Agents Toolkit to train a Deep Reinforcement Learning (DRL) based active control method that has a goal of learning a maximum coverage policy for human organ monitoring within a minimal operation time. We create a different project particular for this task. To reproduce results or train you own control policy please follow the instructions provided [here](https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy/tree/master/VR-Caps-Unity-RL)
+We use Unity's ML-Agents Toolkit to train a Deep Reinforcement Learning (DRL) based active control method that has a goal of learning a maximum coverage policy for human organ monitoring within a minimal operation time. We create a different project for the area coverage task (VR-Caps-Unity-RL) . To reproduce results or train you own control policy please follow the instructions provided [here](https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy/tree/master/VR-Caps-Unity-RL).
 <p align="center">
   <img src="img/capsulecoverage.gif" width=500//>
 </p>
 
-#### 2. Pose and Depth Estimation
+#### 3.2. Pose and Depth Estimation
 
 To illustrate the effectiveness of VR-Caps environment in terms of neural network training for pose and depth estimation, we trained a state-of-the-art method, SC-SfMLearner algorithm, using synthetic data created on VR-Caps. The results showed on the paper can be reproduced by using the models given in the [folder](Tasks/PoseAndDepth/models). Model 1 corresponds to the case when there is only real data is used (without virtual pretraining) and Model 2 is the case where we use synthetic data for pre-training and then fine-tune with the real data from [EndoSLAM dataset](https://github.com/CapsuleEndoscope/EndoSLAM). For the pretraining, we used the data on [drive](https://drive.google.com/drive/folders/1PJvGr9i3G5oe1t_Qw6mwq2YX3QPmk5-T?usp=sharing). The set used for training with the real data training ... and ... are used for Model 1 and 2, respectively. The test sets for colon are Colon_Traj5_HighCam and Colon_Traj5_LowCam and for small instesine SmallInstesine_Traj1_HighCam and SmallInstesine_Traj4_HighCam.
 
@@ -172,16 +172,16 @@ To extend the test cases, you can generate new data as explained above and train
 
 For depth estimation, we test on both virtual and real endoscopy data ([Kvasir](https://datasets.simula.no/kvasir/) and [Redlesion](https://rdm.inesctec.pt/dataset/nis-2018-003) datasets).
 
-#### 3. 3D Reconstruction
+#### 3.3. 3D Reconstruction
 
 In this work, we propose and evaluate a hybrid 3D reconstruction technique. To exemplify the effectiveness of Unity data, we compare the results of reconstructions both on real and synthetic data. 
 
-#### 4. Disease Classification
+#### 3.4. Disease Classification
 
 We mimic the 3 diseases (i.e., Polyps, Haemorrhage and Ulcerative Collitis) in our simulation environment. Hemorrage and Ulcerative Collitis are created based on the real endoscopy images from Kvasir dataset mimicking the abnormal mucosa texture. As polyps are not only distintive in texture but also in topology, we use CT scans from patients who have polyps and use this 3D morphological information to reconstruct 3D organs inside our environment.  instances with different severities ranging from grade 1 to grade 4, three different grades of ulcerative colitis, and different polyps instances with various shapes and sizes.
 
 
-#### 5. Super Resolution
+#### 3.5. Super Resolution
 
 We benchmarked the effectivity of the Unity environment using Deep Super-Resolution for Capsule Endoscopy (EndoL2H) network based on the dilemma of high camera resolution coming with increasing the size of the optics and the sensor array.
 
