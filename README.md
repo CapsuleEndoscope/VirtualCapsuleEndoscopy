@@ -207,11 +207,13 @@ Visual demonstration of all tasks done on this work and their results are as fol
 If you find our work useful in your research or if you use parts of this code please consider citing our paper:
 
 ```
-@article{...,
-    title={VR-Caps: A Virtual Environment for Active Capsule Endoscopy},
-    author={Kagan Incetan and Abdulhamid Obeid and Omer Celik and Guliz Irem Gokceler and Yasin Almalioglu and Hunter B. Gilbert and Nicholas J. Durr and Faisal Mahmood and Kutsev Bengisu Ozyoruk and Mehmet Turan},
-    journal={...},
-    year={2020}
+@misc{incetan2020vrcaps,
+      title={VR-Caps: A Virtual Environment for Capsule Endoscopy}, 
+      author={Kagan Incetan and Ibrahim Omer Celik and Abdulhamid Obeid and Guliz Irem Gokceler and Kutsev Bengisu Ozyoruk and Yasin Almalioglu and Richard J. Chen and Faisal Mahmood and Hunter Gilbert and Nicholas J. Durr and Mehmet Turan},
+      year={2020},
+      eprint={2008.12949},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
