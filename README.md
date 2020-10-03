@@ -162,6 +162,7 @@ We use Unity's ML-Agents Toolkit to train a Deep Reinforcement Learning (DRL) ba
 
 
 
+
 <p align="center">
   <img src="img/capsulecoverage.gif" width=500//>
 </p>
