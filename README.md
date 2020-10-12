@@ -46,7 +46,7 @@ Now that you have installed Unity and Python, you can now clone this repository.
 ```sh
 git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
 ```
-Now, you will need open Unity Hub and simply create a new Unity project by adding VR-Caps-Unity. Then, simply open the Unity by clicking on the project you just added.
+Now, you will need open Unity Hub and simply create a new Unity project by adding VR-Caps-Unity. Then, simply open the Unity by clicking on the project you just added. Please note that we have tested the environment on Unity Version 2019.3.3f1.
 
 The opening scene Clinic Setup is our default scene. You can navigate other scenes by [Scenes](VR-Caps-Unity/Assets/Scenes).
 
