@@ -14,4 +14,4 @@ We highly encourage to check basic tutorials to get started with the ML-Agents. 
 ### 3. Train a new model
 In order to train a new model, please follow the instructions provided [here](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-ML-Agents.md) and make necessary adjustments in the behaviour parameters.
 </p>
-<img align="right" src="../img/capsuleagent.png" width="200">
+<img align="center" src="../img/capsuleagent.png" width="200">
