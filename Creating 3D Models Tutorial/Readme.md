@@ -5,7 +5,16 @@ When you want to download the datasets, the website has a manual on how to downl
 
 This is the [link](https://wiki.cancerimagingarchive.net/display/NBIA/Downloading+TCIA+Images)
 
+<p align="center">
+<img src='images/1_NBIA Data Retriever.png' width=512/> 
+</p>
+
 2- Install InVesalius software and open it and import the datatset which was downloaded in step 1. Then select the "Supine" set of dicoms and click on "Import"
+
+<p align="center">
+<img src='images/2_InVesalius3 (Importing DICOM and selecting Supine set).png' width=512/> 
+</p>
+
 
 3- The following screen will show, from the dropdown menu on the left "Set predefined or manual threshold" select "Soft TIssue" which will cause the green selection that is shown, then click on "Create Surface"
 
