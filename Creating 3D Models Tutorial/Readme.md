@@ -6,7 +6,7 @@ When you want to download the datasets, the website has a manual on how to downl
 This is the [link](https://wiki.cancerimagingarchive.net/display/NBIA/Downloading+TCIA+Images)
 
 <p align="center">
-<img src='Creating 3D Models Tutorial/images/1_NBIA Data Retriever.png' width=512/> 
+<img src='images/1_NBIA Data Retriever.PNG' width=512/> 
 </p>
 
 2- Install InVesalius software and open it and import the datatset which was downloaded in step 1. Then select the "Supine" set of dicoms and click on "Import"
