@@ -78,7 +78,7 @@ Adjust image resolutions from **Capture Output Resolution** and FPS(Frame per se
 
 #### Importing new models to the scene<img align="right" src="img/Hierarchy.png" width="200">
 
-You can import other models from [GI-Organs](Assets/GI-Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture.
+You can import other models from [GI-Organs](https://drive.google.com/drive/folders/1PJvGr9i3G5oe1t_Qw6mwq2YX3QPmk5-T?usp=sharing) folder by simply dragging the model to the scene. You will notice that the imported model has no texture.
 
 In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
 
