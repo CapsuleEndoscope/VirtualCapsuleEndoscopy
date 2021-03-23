@@ -11,7 +11,7 @@ VR-Caps: A Virtual Environment for Capsule Endoscopy
 
 ## Overview
 
-We introduce a virtual active capsule endoscopy environment developed in Unity that provides a simulation platform to generate synthetic data as well as a test bed to develop and test algorithms. Using that envronment, we perform various evaluations for common robotics and computer vision tasks of active capsule endoscopy such as classification, pose and depth estimation, area coverage, autonomous navigation, learning control of endoscopic capsule robot with magnetic field inside GI-tract organs, super-resolution, etc. The demonstration of our virtual environment is available on [YouTube](https://www.youtube.com/watch?v=UQ2u3CIUciA).
+We introduce a virtual active capsule endoscopy environment developed in Unity that provides a simulation platform to generate synthetic data as well as a test bed to develop and test algorithms. Using that environment, we perform various evaluations for common robotics and computer vision tasks of active capsule endoscopy such as classification, pose and depth estimation, area coverage, autonomous navigation, learning control of endoscopic capsule robot with magnetic field inside GI-tract organs, super-resolution, etc. The demonstration of our virtual environment is available on [YouTube](https://www.youtube.com/watch?v=UQ2u3CIUciA).
 
 Our main contributions are as follows:
   - We propose synthetic data generating tool for creating fully labeled data.
@@ -46,7 +46,7 @@ Now that you have installed Unity and Python, you can now clone this repository.
 ```sh
 git clone https://github.com/CapsuleEndoscope/VirtualCapsuleEndoscopy.git
 ```
-Now, you will need open Unity Hub and simply create a new Unity project by adding VR-Caps-Unity. Then, simply open the Unity by clicking on the project you just added.
+Now, you will need open Unity Hub and simply create a new Unity project by adding VR-Caps-Unity. Then, simply open the Unity by clicking on the project you just added. Please note that we have tested the environment on Unity Version 2019.3.3f1.
 
 The opening scene Clinic Setup is our default scene. You can navigate other scenes by [Scenes](VR-Caps-Unity/Assets/Scenes).
 
@@ -78,7 +78,7 @@ Adjust image resolutions from **Capture Output Resolution** and FPS(Frame per se
 
 #### Importing new models to the scene<img align="right" src="img/Hierarchy.png" width="200">
 
-You can import other models from [GI-Organs](Assets/GI-Organs) folder by simply dragging the model to the scene. You will notice that the imported model has no texture.
+You can import other models from [GI-Organs](https://drive.google.com/drive/folders/1PJvGr9i3G5oe1t_Qw6mwq2YX3QPmk5-T?usp=sharing) folder by simply dragging the model to the scene. You will notice that the imported model has no texture.
 
 In order to add texture, you need to navigate [Organs](VR-Caps-Unity/Assets/Imported/Materials/Organs) folder and simply drag material files (.mat) to corresponding 3D organs (For example, Colon Material.mat to Colon that can be selected in the Hierarchy window under the Prefab.)
 
@@ -146,13 +146,13 @@ Post-processing effects that HDRP (High Definition Rendering Pipeline) provides 
 For the actuation of the capsule, we have placed a cylinder magnet inside the capsule and a ball magnet attached to the robot arm. Simulation of the magnetic field is modeled as dipole-dipole interactions by using (**MagnetoDynamics**).
 
 The default Scene has two infinitesimal dipoles (**MagneticDipole** prefabs) embedded in Rigidbodies of the  **DiscMagnet**(child object of **Capsule**) and  **BallMagnet** objects. In Unity’s Scene and Hierarchy views, you can see that **MagneticDipoles** are attached to the them.
-Please note that every Scene that uses **Magnetodynamics** must contain an **ElectromagneticFieldController** that can be found inside the Magnetodynamics [folder](VR-Caps/Unity/Assets/Magnetodynamics). Just drag it to anywhere in the scene to activate magnetic field.
+Please note that every Scene that uses **Magnetodynamics** must contain an **ElectromagneticFieldController** that can be found inside the Magnetodynamics [folder](VR-Caps-Unity/Assets/Magnetodynamics). Just drag it to anywhere in the scene to activate magnetic field.
 
-If the **InverseKinematic.cs** [script](Unity-VR-Caps/Assets/Scripts/InverseKinematic.cs) is activated, the robotic arm will also be moving as you move the ball magnet (either by a script or manually). 
+If the **InverseKinematic.cs** [script](VR-Caps-Unity/Assets/Scripts/InverseKinematic.cs) is activated, the robotic arm will also be moving as you move the ball magnet (either by a script or manually). 
 
 It is also possible to move the capsule directly without any electro magnetic force on it. To do that, add the **CapsuleMovement.cs** [script](Unity-VR-Caps/Assets/Scripts/CapsuleMovement.cs) to the capsule and control it by keyboard arrows.
 
-The capsule camera can also be controlled if you add **MouseCameraController.cs** [script](Unity-VR-Caps/Assets/Scripts/MouseCameraController.cs) to the camera. In that way, the capsule camera will look to the direction pointed by the mouse.
+The capsule camera can also be controlled if you add **MouseCameraController.cs** [script](VR-Caps-Unity/Assets/Scripts/MouseCameraController.cs) to the camera. In that way, the capsule camera will look to the direction pointed by the mouse.
 
 ### 3. Tasks 
 
@@ -166,9 +166,10 @@ We use Unity's ML-Agents Toolkit to train a Deep Reinforcement Learning (DRL) ba
 
 #### 3.2. Pose and Depth Estimation
 
-To illustrate the effectiveness of VR-Caps environment in terms of neural network training for pose and depth estimation, we trained a state-of-the-art method, SC-SfMLearner algorithm, using synthetic data created on VR-Caps. The results showed on the paper can be reproduced by using the models given in the [folder](Tasks/PoseAndDepth/models). Model 1 corresponds to the case when there is only real data is used (without virtual pretraining) and Model 2 is the case where we use synthetic data for pre-training and then fine-tune with the real data from [EndoSLAM dataset](https://github.com/CapsuleEndoscope/EndoSLAM). For the pretraining, we used the data on [drive](https://drive.google.com/drive/folders/1PJvGr9i3G5oe1t_Qw6mwq2YX3QPmk5-T?usp=sharing). The set used for training with the real data training ... and ... are used for Model 1 and 2, respectively. The test sets for colon are Colon_Traj5_HighCam and Colon_Traj5_LowCam and for small instesine SmallInstesine_Traj1_HighCam and SmallInstesine_Traj4_HighCam.
+To illustrate the effectiveness of VR-Caps environment in terms of neural network training for pose and depth estimation, we trained a state-of-the-art method, SC-SfMLearner algorithm, using synthetic data created on VR-Caps. The results showed on the paper can be reproduced by using the models given in the [drive](https://drive.google.com/drive/folders/1PJvGr9i3G5oe1t_Qw6mwq2YX3QPmk5-T?usp=sharing). Virtual Pre Training folder is for the model trained only with the synthetic data.
+Model 1 corresponds to the case when there is only real data is used (without virtual pretraining) and Model 2 is the case where we use synthetic data for pre-training and then fine-tune with the real data from [EndoSLAM dataset](https://github.com/CapsuleEndoscope/EndoSLAM). For the pretraining, we used the data on [drive](https://drive.google.com/drive/folders/1PJvGr9i3G5oe1t_Qw6mwq2YX3QPmk5-T?usp=sharing). The test sets for colon are Colon_Traj5_HighCam and Colon_Traj5_LowCam and for small instesine SmallInstesine_Traj1_HighCam and SmallInstesine_Traj4_HighCam.
 
-For pose estimation, ATE and RPE calculations can be done by using [poseError.py](Tasks/PoseAndDepth/scripts/poseError.py)
+For pose estimation, ATE and RPE calculations can be done by using this [script](Tasks/Pose%20and%20Depth%20Estimation/poseError.py)
 To extend the test cases, you can generate new data as explained above and train new SC-SfM networks and test on both real or synthetic data.
 
 For depth estimation, we test on both virtual and real endoscopy data ([Kvasir](https://datasets.simula.no/kvasir/) and [Redlesion](https://rdm.inesctec.pt/dataset/nis-2018-003) datasets).
