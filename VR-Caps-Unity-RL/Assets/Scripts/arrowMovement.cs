@@ -2,24 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class arrowMovement : MonoBehaviour
+public class ArrowMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public GameObject Capsule;
+	// variables
+    public GameObject capsule;
     public Camera cam;
-    Vector3 capsulePos, updatedCapsulePos;
+    Vector3 capsule_pos;
+
+    // Start is called before the first frame update
     void Start()
     {
-        capsulePos = Capsule.transform.position;
+        capsule_pos = capsule.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        updatedCapsulePos = Capsule.transform.position;
-        Vector3 offset = updatedCapsulePos - capsulePos;
+        Vector3 updated_capsule_pos = capsule.transform.position;
+        Vector3 offset = updated_capsule_pos - capsule_pos;
         transform.position += offset;
-        transform.rotation = Quaternion.Euler(90,cam.transform.eulerAngles.y,cam.transform.eulerAngles.z);
-        capsulePos = updatedCapsulePos;
+        transform.rotation = Quaternion.Euler(90, cam.transform.eulerAngles.y, cam.transform.eulerAngles.z);
+        capsule_pos = updated_capsule_pos;
     }
 }
