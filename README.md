@@ -67,7 +67,7 @@ You will need **Unity Recorder** which can be installed using **Unity Package Ma
 
 After installing Unity Recorder, navigate to Recorder Window and open the Recorder panel. 
 
-On the panel, click **Add New Recorders** and then select **Image Sequence** and **AOV Image Sequence** for RGB image recording and depth recording respctively. 
+On the panel, click **Add New Recorders** and then select **Image Sequence** and **AOV Image Sequence** for RGB image recording and depth recording respectively. 
 
 <p align="center">
   <img src="img/Recorder_comb.png"
